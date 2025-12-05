@@ -2,11 +2,12 @@ import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
 import CardC from "../compnents/cardC";  
+import { teamData } from "../data/TeamData";  
 
 export default function Team(){
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/><div className="w-full h-[400px] relative overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
