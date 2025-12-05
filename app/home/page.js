@@ -5,7 +5,7 @@ import Footer from "../compnents/Footer";
 export default function Home(){
     return(
 <>
-    <Footer/>
+   <NavBar/>
 
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
     
@@ -62,8 +62,8 @@ export default function Home(){
         </div>
     </div> 
 
-    <NavBar/>
-
+    
+ <Footer/>
 
 </>
     );
