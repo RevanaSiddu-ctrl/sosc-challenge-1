@@ -1,7 +1,10 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import CardC from "../compnents/cardC"; 
+ import teamData ,{ alumniData }from "../data/teamData";
+
+
 
 export default function Team(){
     return(
@@ -50,6 +53,7 @@ export default function Team(){
                             image={data.image}
                             name={data.name}
                             role={data.role}
+                            link={data.link}
                             
                           />
                         ))}
@@ -57,6 +61,24 @@ export default function Team(){
                       </div>
 
               </div>
+{/* Alumni Section */}
+<div className="w-full flex flex-col items-start pt-10 pl-30">
+  <h1 className="text-2xl text-black font-bold">Alumni</h1>
+
+  <div className="flex justify-center items-center mt-10">
+    <div className="grid grid-cols-3 gap-20 mt-10 px-10 justify-center items-center">
+      {alumniData.map((data) => (
+        <CardC
+          key={data.id}
+          image={data.image}
+          name={data.name}
+          role={data.role}
+          link={data.link}
+        />
+      ))}
+    </div>
+  </div>
+</div>
 
               <Footer/>
         </>
