@@ -1,28 +1,4 @@
----
-name: "Bug Report"
-about: Report a bug in the project
-title: ""
-labels: bug
-assignees: ""
----
-
-## Bug Description
-Describe the issue clearly.
-
-##  Location
-- File:
-- Component:
-- Page/Route:
-
-## Steps to Reproduce
-1.
-2.
-3.
-
-
-## Additional Context
-
----
+--
 name: "Components and the card are missplaced"
 about: Footer, NavBar are misplaced
 title: ""
@@ -60,16 +36,40 @@ Things i have changed
 2.Page was overflowing because of "Hero section". Fixed that
 3.Added Hover and current page underline in the navbar
 4.Hero section is offset to the side. Fixed it to center.
+5.Fixed the size of all the text in the home page wrt the og site.
 
 ##  Location
-- File:
-- Component:
-- Page/Route:
+- File: /home/page.js
+        /compnents/NavBar.jsx
+- Component: All the onces in the Home page
+- Page/Route: sosc-challenge-1/app/home/page.js
 
 ## Steps to Reproduce
-1.
-2.
-3.
+1.NA
 
 
 ## Additional Context
+NA
+
+--
+name: "Hero Section of Events page"
+about: Hero section looks weird and smashed along with slight changed to font.
+title: ""
+labels: Component
+assignees: "Nivas"
+---
+
+## Bug Description
+Hero Section of events page looks smached and fonts (bold, size, etc) dont match the og website
+
+##  Location
+- File: events/page.js
+- Component: Hero Section
+- Page/Route: sosc-challenge-1/app/events/page.js
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA
