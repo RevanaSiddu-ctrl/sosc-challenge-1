@@ -5,7 +5,8 @@ import Footer from "../compnents/Footer";
 export default function Home(){
     return(
 <>
-    <Footer/>
+    {/* Navbar at TOP */}
+    <NavBar />
 
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
     
@@ -27,6 +28,7 @@ export default function Home(){
             <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
 
     </div>
+
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
@@ -38,6 +40,7 @@ export default function Home(){
             </p>
         </div>
     </div>  
+
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Explore clubs and Activities</h2>
@@ -47,8 +50,9 @@ export default function Home(){
                 Mozilla Campus Clubs, Developer Students clubs, and the GitHub Campus Expert are to name a few
             </p>
         </div>
-        <img src="	https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
+        <img src="https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
     </div> 
+
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <img src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
@@ -62,8 +66,8 @@ export default function Home(){
         </div>
     </div> 
 
-    <NavBar/>
-
+    {/* Footer at BOTTOM */}
+    <Footer />
 
 </>
     );
