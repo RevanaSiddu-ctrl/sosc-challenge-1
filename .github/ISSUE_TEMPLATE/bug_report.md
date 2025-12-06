@@ -45,3 +45,31 @@ The components include Footer, Navbar
 
 ## Additional Context
 NA
+
+---
+name: "Fixing all the small issues in Home Page and NavBar"
+about: Fixing all the samll issues in the home page so that it looks as closely as possible to the og page.
+title: "Fixing small issues"
+labels: Fixing Small Issues
+assignees: "Nivas"
+---
+
+## Bug Description
+Things i have changed
+1.Placement of Logo, the buttons and the size of the navbar
+2.Page was overflowing because of "Hero section". Fixed that
+3.Added Hover and current page underline in the navbar
+4.Hero section is offset to the side. Fixed it to center.
+
+##  Location
+- File:
+- Component:
+- Page/Route:
+
+## Steps to Reproduce
+1.
+2.
+3.
+
+
+## Additional Context

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <>
-            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full h-[400px] flex flex-row mt-10">
+            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full h-[400px] flex flex-row justify-center mt-10">
         
                 <div className="h-[90%] flex felx-row">
 
