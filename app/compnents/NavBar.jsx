@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="h-[60px] fixed bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center ">
+      <div className="h-[60px] z-50 fixed bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center ">
         <Image
           src="https://sosc.org.in/_astro/sosc_logo_white.Bej07WYV_Z10hDC0.svg"
           alt="logo"
