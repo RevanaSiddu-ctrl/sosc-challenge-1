@@ -1,37 +1,56 @@
 export const teamData = [
- 
+
   {
     id: 1,
+    name: "Amrithraj N",
+    role: "Organizer",
+    image: "https://github.com/ritham404.png"
+  },
+  {
+    id: 2,
+    name: "Himanshu Shetty",
+    role: "Organizer",
+    image: "https://github.com/himanshukt03.png"
+  },
+  {
+    id: 3,
+    name: "Pratheek G Shetty",
+    role: "Organizer",
+    image: "https://github.com/techshetty.png"
+  },
+ 
+  {
+    id: 4,
     name: "Shreelakshmi Pai",
     role: "Organizer",
     image: "https://github.com/Shree-Pai.png"
   },
   {
-    id: 2,
+    id: 5,
     name: "Ashika",
     role: "SOSWC Representative",
     image: "https://github.com/askashika.png"
   },
   {
-    id: 3,
+    id: 6,
     name: "Aaron Fernandes",
     role: "Community Member",
     image: "https://github.com/aaronfernandes21.png"
   },
   {
-    id: 4,
+    id: 18,
     name: "Advaith S Shetty",
     role: "Community Member",
     image: "https://github.com/advaithsshetty.png"
   },
   {
-    id: 5,
+    id: 19,
     name: "Ananth Hegde",
     role: "Community Member",
     image: "https://sosc.org.in/github_avatar.svg"
   },
   {
-    id: 6,
+    id: 20,
     name: "Apeksha L Naik",
     role: "Community Member",
     image: "	https://github.com/Apeksha-L-Naik.png"
@@ -105,22 +124,5 @@ export const teamData = [
   },
 
   // THIRD IMAGE SET
-  {
-    id: 18,
-    name: "Amrithraj N",
-    role: "Organizer",
-    image: "https://github.com/ritham404.png"
-  },
-  {
-    id: 19,
-    name: "Himanshu Shetty",
-    role: "Organizer",
-    image: "https://github.com/himanshukt03.png"
-  },
-  {
-    id: 20,
-    name: "Pratheek G Shetty",
-    role: "Organizer",
-    image: "https://github.com/techshetty.png"
-  }
+
 ];

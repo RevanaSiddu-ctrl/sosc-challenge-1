@@ -8,14 +8,15 @@ export default function Footer(){
         
                 <div className="h-[90%] flex felx-row">
 
-                    <div className="flex flex-col justify-center  gap-2 ml-10 w-[100%]">
-                        <h2 className="text-white text-2xl text-bold ">Sahyadri Open Source Community</h2>
+                    <div className="flex flex-col justify-center -mt-20 gap-2 ml-60 w-[100%]">
+                        <h2 className="text-white text-xl font-bold font-mono ">Sahyadri Open Source Community</h2>
                         <h4 className="text-white">Sahyadri College of Engineering and Management, Adyar, Mangalore - 575007 IN</h4>
-                        <Link href="https://sosc.org.in" className="underline">sosc.org.in</Link>
+                        <Link href="https://sosc.org.in" className="underline">sosc@sahyadri.edu.in</Link>
+                        <h4 className="text-white">+91 79941 34420</h4>
                     </div>
 
-                    <div className="flex flex-col justify-center items-center w-[140px] gap-2 ml-40">
-                        <h2 className="text-white font-bold">Fallow Us</h2>
+                    <div className="flex flex-col justify-center  w-[150px] gap-2 -mt-10 ml-40">
+                        <h2 className="text-white font-bold">Follow Us</h2>
                         <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
                         <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
                         <Link href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="underline">LinkedIn</Link>
@@ -23,7 +24,7 @@ export default function Footer(){
                         <Link href="https://www.youtube.com/channel/UCk8nlSMwUT-jhEtamMF-V-w" className="underline">YouTube</Link>
                     </div>
 
-                    <div className="flex flex-col justify-center items-center w-[300px] gap-2 ml-20">
+                    <div className="flex flex-col justify-center  w-[300px] gap-2 ml-20 -mt-25">
                         <h2 className="text-white font-bold">Others</h2>
                         <Link href="https://sosc.org.in/" className="underline">Website</Link>
                         <Link href="https://sosc.org.in/guidelines/" className="underline">Community Guidlines</Link>

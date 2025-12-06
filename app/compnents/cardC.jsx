@@ -1,5 +1,4 @@
 
-
 export default function CardC({image, name, role}){
     return(
         <>

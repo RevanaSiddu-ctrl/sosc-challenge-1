@@ -1,13 +1,17 @@
+"use client"
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer";
+import { useRouter } from "next/navigation";
+
 
 export default function Home(){
+    const router = useRouter();
     return(
 <>
-    <Footer/>
+    <NavBar/>
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
+    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-150 pt-70">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
@@ -16,18 +20,18 @@ export default function Home(){
              height={100}
             className="mb-3"
             />
-             <h2 className="text-black text-2xl font-bold mb-4">
+             <h2 className="text-black text-[35px] font-bold mb-4">
                  Sahyadri Open Source Community
             </h2>
-            <p className="text-gray-700 text-md max-w-[700px] leading-relaxed">
+            <p className="text-gray-700 text-md max-w-[600px] leading-relaxed">
                  A community driven by tech enthusiasts and open-source contributors, 
                  helping students become part of the open-source ecosystem through 
                 training and skill development.
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
+            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer"><a href="https://sosc.org.in/guidelines/">Community Guidilnes</a></button>
 
     </div>
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
+    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] pt-110 ">
         <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Get Trained by Experts</h2>
@@ -58,11 +62,11 @@ export default function Home(){
                  We are more than 100 members with interests on various fields of technology here to know each other and get connected.
                   Meet our members to know more about us and build something cool!
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button>
+            <button onClick={()=>router.push("./team")} className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button>
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer/>
 
 
 </>
