@@ -23,6 +23,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: chiller, sans-serif;
+  font-family: arial, sans-serif;
 }
 
