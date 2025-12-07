@@ -1,7 +1,8 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import CardC from "../compnents/cardC"; 
+import { teamData } from "../data/members";
 
 export default function Team(){
     return(
@@ -21,6 +22,7 @@ export default function Team(){
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <h1 className="text-white text-5xl font-bold">Our Team</h1>
                   <h1 className="text-white text-2xl font-extrabold">
+                    {/*font bold change to font no bold */}
                     Meet the passionate individuals driving our community forward
                   </h1>
                 </div>
@@ -43,7 +45,8 @@ export default function Team(){
                 <div className="w-full flex flex-col items-start pt-10 pl-30">
                 <h1 className="text-2xl text-black font-bold">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                      <div className="grid grid-cols-3 gap-10  mt-20  px-10  justify-center items-center">
+                        {/*reduce gap 20 to gap-10 also px-10 to 5  */}
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
