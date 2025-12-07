@@ -8,7 +8,7 @@ export default function Home(){
     <NavBar/>
 
     {/* Hero Section */}
-    <div className="w-full h-[600px] flex items-center justify-center">
+    <div className="w-full h-[600px] flex items-center justify-center mt-20">
         <div className="flex flex-col justify-center items-start w-[40%] h-full">
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"

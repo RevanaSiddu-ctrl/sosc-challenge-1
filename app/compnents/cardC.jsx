@@ -3,7 +3,7 @@
 export default function CardC({image, name, role}){
     return(
         <>
-            <div className="flex flex-col items-center justify-center h-[250px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
+            <div className="flex flex-col items-center justify-center h-[200px] w-[350px] shadow-[0_0_8px_rgba(0,0,0,0.25)]">
                 <img src={image}
                 alt="member" 
                 height={100} 

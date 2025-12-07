@@ -73,3 +73,73 @@ Hero Section of events page looks smached and fonts (bold, size, etc) dont match
 
 ## Additional Context
 NA
+
+--
+name: "Hero Section of Blogs page"
+about: Hero section looks weird along with slight changed to font.
+title: ""
+labels: Component
+assignees: "Nivas"
+---
+
+## Bug Description
+Hero Section of Blogs page looks weird and fonts (bold, size, etc) dont match the og website
+
+##  Location
+- File: blogs/page.js
+- Component: Hero Section
+- Page/Route: sosc-challenge-1/app/blogs/page.js
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA
+
+--
+name: "Data Not being fetched in Team page"
+about: Members file was not being called in Team page causing error
+title: ""
+labels: Data Fetching
+assignees: "Nivas"
+---
+
+## Bug Description
+Since the members file was not imported into team page. It was throwing an error and the page was not loading.
+Solved it by importing the data from members.js file
+
+##  Location
+- File: team/page.js
+- Component: data/member.js
+- Page/Route: sosc-challenge-1/app/events/page.js
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA
+
+--
+name: "Fixing Placements of components and herosection in Team page wrt the og page"
+about: Fixing all the placements issues in the page to resemble the og website
+title: ""
+labels: NA
+assignees: "Nivas"
+---
+
+## Bug Description
+Placement issues solved all over the page wrt to the og website.
+
+##  Location
+- File: team/page.js
+- Component: NA
+- Page/Route: sosc-challenge-1/app/events/page.js
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA
