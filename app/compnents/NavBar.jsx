@@ -7,6 +7,7 @@ export default function NavBar() {
 
   return (
     <>
+    <nav className="fixed top-0 left-0 w-full  z-50">
       <div className="h-[70px] md:h-[90px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row  items-center justify-between top-0 left-0 z-50">
         <Image
           src="https://sosc.org.in/_astro/sosc_logo_white.Bej07WYV_Z10hDC0.svg"
@@ -42,6 +43,7 @@ export default function NavBar() {
           </button>
         </div>
       </div>
+      </nav>
     </>
   );
 }

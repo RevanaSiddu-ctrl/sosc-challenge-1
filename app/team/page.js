@@ -7,8 +7,10 @@ import { teamData } from "../data/members";
 export default function Team() {
   return (
     <>
-      <NavBar />
-      <div className="overflow-x-hidden">
+    <NavBar/>
+      
+      <div className="overflow-x-hidden mt-[70px] md:mt-[90px]">
+        
       <div className="w-full h-[400px] relative  overflow-x-hidden">
         <Image
           src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
