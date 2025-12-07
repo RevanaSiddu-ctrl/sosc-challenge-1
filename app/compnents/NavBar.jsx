@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="h-[50px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center top-0 left-0 z-50">
+      <div className="fixed top-0 left-0 z-50 h-[50px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center">
 
         {/* LOGO */}
         <Image 
