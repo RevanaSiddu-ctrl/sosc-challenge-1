@@ -11,27 +11,27 @@ export default function Home(){
 <>
     <NavBar/>
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-150 pt-70">
+    <div className="flex flex-col justify-center  items-start w-screen md:w-[700px] h-[700px] px-10 ml-5 md:ml-150 pt-70">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
              alt="logo"
             width={100}
              height={100}
-            className="mb-3"
+            className="mb-3 md:h-30 md:w-30 h-80 w-80 md:mt-0 mt-400"
             />
-             <h2 className="text-black text-[35px] font-bold mb-4">
+             <h2 className="text-black text-[110px] md:text-[35px] md:w-100 w-310 font-bold mb-4">
                  Sahyadri Open Source Community
             </h2>
-            <p className="text-gray-700 text-md max-w-[600px] leading-relaxed">
+            <p className="text-gray-700 text-md w-310 md:max-w-[600px] leading-relaxed md:text-lg text-[50px]">
                  A community driven by tech enthusiasts and open-source contributors, 
                  helping students become part of the open-source ecosystem through 
                 training and skill development.
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer"><a href="https://sosc.org.in/guidelines/">Community Guidilnes</a></button>
+            <button className="bg-[oklch(77.034%_0.20078_152.412)] md:w-[160px] md:h-[40px] h-[200px] w-100 rounded-3xl text-white text- md:text-sm font-bold mt-6 md:mt-3 cursor-pointer"><a href="https://sosc.org.in/guidelines/">Community Guidilnes</a></button>
 
     </div>
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] pt-110 ">
+    <div className="h-[500px] w-full flex flex-row items-center md:mt-0 mt-400 pl-[15%] pt-110 ">
         <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Get Trained by Experts</h2>
