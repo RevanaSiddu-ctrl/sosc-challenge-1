@@ -3,36 +3,39 @@ import { eventsData } from "../data/Events";
 import CardB from "../compnents/cardB";
 import Footer from "../compnents/Footer";
 
-export default function Events(){
-    return(
-        <>
-        <NavBar/>
+export default function Events() {
+  return (
+    <>
+      <NavBar />
 
-        <div className="w-full relative">
-            <img 
-            src="https://sosc.org.in/_astro/event.DQU1qtO9_Z1ymQy6.webp" 
-            alt="bgimg"
-            className="w-full h-[500px] brightness-50 bg-center bg-cover object-cover object-center"/>
+      <div className="w-full relative">
+        <img
+          src="https://sosc.org.in/_astro/event.DQU1qtO9_Z1ymQy6.webp"
+          alt="bgimg"
+          className="w-full h-[500px] brightness-50 bg-center bg-cover object-cover object-center"
+        />
 
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <h1 className="text-white text-5xl font-bold mb-5">Our Events</h1>
-                <h1 className="text-white text-1xl">
-                    Explore upcoming and past events hosted by our community.
-                </h1>
-            </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-10">
+          <h1 className="text-white text-5xl font-bold mb-5">Our Events</h1>
+          <h1 className="text-white text-1xl">
+            Explore upcoming and past events hosted by our community.
+          </h1>
         </div>
+      </div>
 
-        <div className="grid grid-cols-2 gap-10 mt-10 px-50">
-            {eventsData.map((event) => (
-                <CardB
-                key={event.id}
-                title={event.title}
-                date={event.date}
-                image={event.image}
-                location={event.location} />
-            ))} 
-        </div>
-        <Footer/>
-        </>
-    )
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 px-6 md:px-55">
+        {eventsData.map((event) => (
+          <CardB
+            key={event.id}
+            title={event.title}
+            date={event.date}
+            image={event.image}
+            location={event.location}
+          />
+        ))}
+      </div>
+
+      <Footer />
+    </>
+  );
 }
