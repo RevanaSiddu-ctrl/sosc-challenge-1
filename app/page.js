@@ -23,7 +23,7 @@ export default function Home(){
                  helping students become part of the open-source ecosystem through 
                 training and skill development.
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidligit nes</button>
+            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidelines</button>
 
     </section>
     <section className="w-full flex flex-col md:flex-row items-center gap-6 px-6 md:px-24">
