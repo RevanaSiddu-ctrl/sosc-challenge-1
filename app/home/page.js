@@ -7,7 +7,7 @@ import Footer from "../compnents/Footer";
 export default function Blogs() {
   return (
     <>
-      <NavBar />
+      <NavBar/>
 
       <div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
         <Image
