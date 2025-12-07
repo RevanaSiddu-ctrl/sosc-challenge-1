@@ -5,10 +5,11 @@ import Footer from "./compnents/Footer";
 export default function Home(){
     return(
 <>
-      <NavBar/>
-
+      
+{/*here i moved navbar inside the div */}
+ <NavBar/>
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
-    
+         
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
              alt="logo"
