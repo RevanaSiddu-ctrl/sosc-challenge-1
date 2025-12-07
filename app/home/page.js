@@ -5,7 +5,7 @@ import Footer from "../compnents/Footer";
 export default function Home(){
     return(
 <>
-    <Footer/>
+    <NavBar/>
 
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
     
@@ -47,7 +47,7 @@ export default function Home(){
                 Mozilla Campus Clubs, Developer Students clubs, and the GitHub Campus Expert are to name a few
             </p>
         </div>
-        <img src="	https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
+        <img src="https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
     </div> 
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <img src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
@@ -62,7 +62,7 @@ export default function Home(){
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer/>
 
 
 </>
