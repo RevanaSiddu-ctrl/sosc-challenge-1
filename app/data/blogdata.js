@@ -37,7 +37,7 @@ export const eventsData = [
   {
     id: 6,
     title: " WebVR : Bringing VR to Web ",
-    date: "2October 5, 2018",
+    date: "October 5, 2018",
     image: "https://sosc.org.in/_astro/cover.BR9LLpJ7_xcaCM.webp",
     author: "By jehadmohamedz",
   },
