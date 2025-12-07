@@ -1,5 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import { Baloo_2 } from "next/font/google";
+
+const baloo2 = Baloo_2({
+  subsets: ["latin"],
+  variable: "--default-font-family",  
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${baloo2.variable} antialiased`}
       >
         {children}
       </body>
