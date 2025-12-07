@@ -7,9 +7,10 @@ import Footer from "../compnents/Footer";
 export default function Blogs() {
   return (
     <>
+    <div className="overflow-x-hidden">
       <NavBar />
 
-      <div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+      <div className="w-full h-[300px] md:h-[550px] relative overflow-x-hidden">
         <Image
           src="https://sosc.org.in/_astro/blog.CMAhwL9B_Z2uelPt.webp"
           alt="img"
@@ -23,14 +24,14 @@ export default function Blogs() {
         
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-white text-5xl font-bold">Blogs</h1>
-          <h1 className="text-white text-2xl font-extrabold">
+          <h1 className=" text-white text-md mt-2 text-center max-w-[300px] md:max-w-none">
             Dive into articles, insights, and updates from our community.
           </h1>
         </div>
       </div>
 
      <div className="flex justify-center items-center mt-10">
-      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+      <div className="grid grid-row md:grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
         {eventsData.map((event) => (
           <CardA
             key={event.id}
@@ -44,6 +45,7 @@ export default function Blogs() {
       </div>
 
       <Footer/>
+      </div>
     </>
   );
 }
