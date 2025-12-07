@@ -4,6 +4,10 @@ import Footer from "../compnents/Footer";
 import CardC from "../compnents/cardC";  
 
 export default function Team(){
+  const teamData = [
+        { id: 1, image: 'https://placehold.co/100x100?text=CM1', name: 'Sample Member 1', role: 'Organizer' },
+        { id: 2, image: 'https://placehold.co/100x100?text=CM2', name: 'Sample Member 2', role: 'Alumni' },
+    ];
     return(
         <>
         <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
