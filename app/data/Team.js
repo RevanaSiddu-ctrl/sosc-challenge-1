@@ -124,3 +124,4 @@ export const teamData = [
     image: "https://github.com/techshetty.png"
   }
 ];
+export default teamData;
