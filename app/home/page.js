@@ -8,7 +8,7 @@ export default function Home(){
     <NavBar/>
 
     <div className="flex flex-col justify-center items-center w-full px-5 pt-24 pb-10 
-                    md:px-10 max-w-4xl lg:max-w-6xl lg:pt-32 mx-auto">
+                    md:px-10 max-w-4xl lg:max-w-xl lg:pt-32 mx-auto">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"

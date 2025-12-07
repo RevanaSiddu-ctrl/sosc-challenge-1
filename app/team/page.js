@@ -4,10 +4,22 @@ import Footer from "../compnents/Footer";
 import CardC from "../compnents/cardC";  
 
 export default function Team(){
-  const teamData = [
-        { id: 1, image: 'https://placehold.co/100x100?text=CM1', name: 'Sample Member 1', role: 'Organizer' },
-        { id: 2, image: 'https://placehold.co/100x100?text=CM2', name: 'Sample Member 2', role: 'Alumni' },
-    ];
+    const teamData = [
+    { id: 1, name: "Amrithraj N", role: "Organizer", image: "https://github.com/ritham404.png",email:'@ritham404'},
+    { id: 2, name: "Himanshu Shetty", role: "Organizer", image: "https://github.com/himanshukt03.png" },
+    { id: 3, name: "Pratheek G Shetty", role: "Organizer", image: "https://github.com/techshetty.png" },
+    { id: 4, name: "Shreelakshmi Pai", role: "Organizer", image: "https://github.com/Shree-Pai.png" },
+    { id: 5, name: "Ashika", role: "SOSwC Representative", image: "https://github.com/Apeksha-L-Naik.png" },
+    { id: 6, name: "Aaron Fernandes", role: "Community Member", image: "https://github.com/aaronfernandes21.png" },
+  ];
+const Alumni = [
+    { id: 1, name: "Amrithraj N", role: "Organizer", image: "https://github.com/ritham404.png",email:'@ritham404'},
+    { id: 2, name: "Himanshu Shetty", role: "Organizer", image: "https://github.com/himanshukt03.png" },
+    { id: 3, name: "Pratheek G Shetty", role: "Organizer", image: "https://github.com/techshetty.png" },
+    { id: 4, name: "Shreelakshmi Pai", role: "Organizer", image: "https://github.com/Shree-Pai.png" },
+    { id: 5, name: "Ashika", role: "SOSwC Representative", image: "https://github.com/Apeksha-L-Naik.png" },
+    { id: 6, name: "Aaron Fernandes", role: "Community Member", image: "https://github.com/aaronfernandes21.png" },
+  ];
     return(
         <>
         <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
@@ -44,8 +56,8 @@ export default function Team(){
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
+                <div className="w-full flex flex-col items-start pt-10 px-5 md:px-10">
+                <h1 className="text-2xl text-black font-bold w-full max-w-sm lg:max-w-4xl text-left mx-auto">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
                       <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
                         {teamData.map((data) => (
@@ -59,6 +71,7 @@ export default function Team(){
                         ))}
                       </div>
                       </div>
+                      
 
               </div>
 
