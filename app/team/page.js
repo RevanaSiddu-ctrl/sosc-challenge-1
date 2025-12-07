@@ -1,7 +1,8 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import CardC from "../compnents/cardC";
+import { teamData } from "../data/members";  
 
 export default function Team(){
     return(
@@ -26,8 +27,8 @@ export default function Team(){
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
+              <div className="w-full min-h-[350px] flex flex-col items-start pt-10 px-5 md:px-10">
+                <h1 className="text-xl md:text-2xl text-black font-bold">Co-Ordinator</h1>
                 
                 <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
@@ -40,10 +41,10 @@ export default function Team(){
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
-                <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                <div className="w-full flex flex-col items-start pt-10 px-5 md:px-10">
+                <h1 className="text-xl md:text-2xl text-black font-bold">Community Members</h1>
+                <div className="flex justify-center items-center mt-10 w-full">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-20 mt-10 px-5 md:px-10 justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
