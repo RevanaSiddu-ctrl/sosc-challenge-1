@@ -2,25 +2,17 @@ import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
 import CardC from "../compnents/cardC";  
-
+import { teamData as membersData } from "../data/members";
 export default function Team(){
-    const teamData = [
-    { id: 1, name: "Amrithraj N", role: "Organizer", image: "https://github.com/ritham404.png",email:'@ritham404'},
-    { id: 2, name: "Himanshu Shetty", role: "Organizer", image: "https://github.com/himanshukt03.png" },
-    { id: 3, name: "Pratheek G Shetty", role: "Organizer", image: "https://github.com/techshetty.png" },
-    { id: 4, name: "Shreelakshmi Pai", role: "Organizer", image: "https://github.com/Shree-Pai.png" },
-    { id: 5, name: "Ashika", role: "SOSwC Representative", image: "https://github.com/Apeksha-L-Naik.png" },
-    { id: 6, name: "Aaron Fernandes", role: "Community Member", image: "https://github.com/aaronfernandes21.png" },
-  ];
-const Alumni = [
-    { id: 1, name: "Amrithraj N", role: "Organizer", image: "https://github.com/ritham404.png",email:'@ritham404'},
-    { id: 2, name: "Himanshu Shetty", role: "Organizer", image: "https://github.com/himanshukt03.png" },
-    { id: 3, name: "Pratheek G Shetty", role: "Organizer", image: "https://github.com/techshetty.png" },
-    { id: 4, name: "Shreelakshmi Pai", role: "Organizer", image: "https://github.com/Shree-Pai.png" },
-    { id: 5, name: "Ashika", role: "SOSwC Representative", image: "https://github.com/Apeksha-L-Naik.png" },
-    { id: 6, name: "Aaron Fernandes", role: "Community Member", image: "https://github.com/aaronfernandes21.png" },
-  ];
-    return(
+    const coordinatorData = {
+        image: 'https://sosc.org.in/team/mustafa_asthikodi.jpg',
+        name: 'Dr. Mustafa Basthikodi',
+        role: 'Faculty Coordinator'
+    };
+    const communityMemberData = membersData.filter(member => member.role !== 'Alumni');
+    const teamData = communityMemberData;
+    const alumniData = membersData.filter(member => member.role === 'Alumni');
+return(
         <>
         <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
                 <Image
@@ -32,9 +24,7 @@ const Alumni = [
                   loading="eager"
                   className="w-full h-full object-cover brightness-50"
                 />
-        
-                
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <h1 className="text-white text-5xl font-bold">Our Team</h1>
                   <h1 className="text-white text-2xl font-extrabold">
                     Meet the passionate individuals driving our community forward
