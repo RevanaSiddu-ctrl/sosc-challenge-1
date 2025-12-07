@@ -12,8 +12,8 @@ export default function NavBar() {
                   <Image src="https://sosc.org.in/_astro/sosc_logo_white.Bej07WYV_Z10hDC0.svg" alt="logo" height={0} width={0} className="h-[70px] w-[70px] ml-[50px]"/>
                   <div className="ml-[1000px] flex  flex-row gap-10">
                     <button className="text-white text-[2xl] cursor-pointer" onClick={()=>router.push("./home")}>Home</button>
-                  <button className="text-white text-[2xl] cursor-pointer" onClick={()=>router.push("./blogs")}>Events</button>
-                  <button className="text-white text-[2xl] cursor-pointer" onClick={() => router.push("/events")}>Blogs</button>
+                  <button className="text-white text-[2xl] cursor-pointer" onClick={()=>router.push("./blogs")}>Blogs</button>
+                  <button className="text-white text-[2xl] cursor-pointer" onClick={() => router.push("/events")}>Events</button>
                   <button className="text-white text-[2xl] cursor-pointer" onClick={()=>router.push("./team")}>Team</button>
                   </div>
                 </div>
