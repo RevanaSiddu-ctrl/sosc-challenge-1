@@ -17,14 +17,14 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="h-[56px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center justify-between px-12 top-0 left-0 z-50 px-25 fixed">
+      <div className="h-[56px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center justify-between px-12 top-0 left-0 z-50 px-50 fixed">
         
         <Image
           src="https://sosc.org.in/_astro/sosc_logo_white.Bej07WYV_Z10hDC0.svg"
           alt="logo"
           height={0}
           width={0}
-          className="h-[25px] w-auto"
+          className="h-[20px] w-auto"
         />
 
         <div className="flex flex-row gap-10">

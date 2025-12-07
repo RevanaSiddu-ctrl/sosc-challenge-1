@@ -22,7 +22,7 @@ export default function Events(){
             </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 mt-10 px-30">
+        <div className="grid grid-cols-2 gap-10 mt-10 px-50">
             {eventsData.map((event) => (
                 <CardB
                 key={event.id}

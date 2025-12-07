@@ -143,3 +143,27 @@ Placement issues solved all over the page wrt to the og website.
 
 ## Additional Context
 NA
+
+--
+name: "Fixing Footer"
+about: Fixing the layout and missing text
+title: ""
+labels: NA
+assignees: "Nivas"
+---
+
+## Bug Description
+Placement issues regarding layout of text and adding missing text wrt og website.
+Fixing Typos
+
+##  Location
+- File: team/page.js
+- Component: NA
+- Page/Route: sosc-challenge-1/app/events/page.js
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA

@@ -1,13 +1,13 @@
 export default function CardB({ image, title, location, date }) {
   return (
-    <div className="flex w-full h-[200px] bg-white rounded-xl shadow-md overflow-hidden cursor-pointer hover:">
+    <div className="flex w-full h-[200px] bg-white  shadow-md overflow-hidden cursor-pointer hover:">
 
       
       <div className="w-[40%] h-full">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
 

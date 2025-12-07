@@ -30,7 +30,7 @@ export default function Blogs() {
       </div>
 
      <div className="flex justify-center items-center mt-10">
-      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+      <div className="grid grid-cols-4 gap-5 mt-10 px-10 justify-center items-center">
         {eventsData.map((event) => (
           <CardA
             key={event.id}

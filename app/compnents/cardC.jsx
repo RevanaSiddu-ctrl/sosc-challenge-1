@@ -9,8 +9,8 @@ export default function CardC({image, name, role}){
                 height={100} 
                 width={100} 
                 className="rounded-[50%] h-[80px] w-[80px]"/>
-                <h1 className="text-black font-bold my-2">{name}</h1>
-                <h3 className="text-gray-950">{role}</h3>
+                <h1 className="text-black font-bold mt-4 mb-1">{name}</h1>
+                <h3 className="text-black/50 text-xs">{role}</h3>
                 </div>
         </>
     )

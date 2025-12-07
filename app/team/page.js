@@ -39,10 +39,10 @@ export default function Team() {
               width={100}
               className="rounded-[50%] h-[100px] w-[100px]"
             />
-            <h1 className="text-black font-bold my-2">
+            <h1 className="text-black font-bold mt-4 mb-1">
               Dr. Mustafa Basthikodi
             </h1>
-            <h3 className="text-gray-950">Faculty Coordinator</h3>
+            <h3 className="text-black/50 text-xs">Faculty Coordinator</h3>
           </div>
         </div>
 
