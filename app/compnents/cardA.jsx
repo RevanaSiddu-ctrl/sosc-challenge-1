@@ -1,22 +1,24 @@
+// ../compnents/cardA.tsx
 export default function CardA({ title, date, image, author }) {
   return (
-    <>
-      <div className="h-[200px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
-        <img
-          src={image}
-          alt="img"
-          className="h-[45%] w-full object-cover rounded-t-md"
-        />
+    <article className="bg-white rounded-md shadow-md overflow-hidden">
+      <img
+        src={image}
+        alt={title}
+        className="h-48 w-full object-cover"
+      />
 
-        <div className="flex flex-col justify-center items-center p-1">
-          <p className="text-md font-medium mt-1 text-black">{date}</p>
-          <h1 className="text-md font-bold mt-1 text-center text-black">{title}</h1>
-          <p className="text-sm font-extralight mt-2 text-black">{author}</p>
-        </div>
+      <div className="px-5 py-4">
+        <p className="text-sm text-gray-600">{date}</p>
+        <h2 className="mt-2 text-lg font-semibold leading-snug text-black">
+          {title}
+        </h2>
+        {author && (
+          <p className="mt-3 text-sm text-gray-700">
+            By {author}
+          </p>
+        )}
       </div>
-    </>
+    </article>
   );
 }
-
-
-
