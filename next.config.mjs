@@ -5,7 +5,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "sosc.org.in",
-        port: "",
         pathname: "/**",
       },
     ],
