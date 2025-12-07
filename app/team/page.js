@@ -9,7 +9,7 @@ import teamData from "../data/Team";
 export default function Team(){
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/><div className="w-full h-[250px] md:h-[400px] relative mt-[90px] overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
@@ -21,18 +21,18 @@ export default function Team(){
                 />
         
                 
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
+                <div className="absolute inset-0 flex flex-col items-center justify-center px-5">
+                  <h1 className="text-white text-3xl md:text-5xl font-bold">Our Team</h1>
+                  <h1 className="text-white text-sm md:text-2xl font-extrabold">
                     Meet the passionate individuals driving our community forward
                   </h1>
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
+              <div className="w-full h-auto flex flex-col items-start pt-5 md:pl-10 pl-30">
+                <h1 className="text-xl md:text-2xl text-black font-bold">Co-Ordinator</h1>
                 
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
+                <div className="flex flex-col items-center justify-center h-[300px] w-full md:w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
                 alt="co-ordinator" 
                 height={100} 
@@ -43,10 +43,10 @@ export default function Team(){
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
+                <div className="w-full flex flex-col items-start pt-10 px-5 md:pl-30">
+                <h1 className="text-xl md:text-2xl text-black font-bold">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 w-full">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 md:gap-20 mt-10 px-5 md:px-10 justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
