@@ -1,4 +1,4 @@
-export const eventsData = [
+export const blogData = [
   {
     id: 1,
     title: "Git and GitHub for Beginners - The Basics ",
