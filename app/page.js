@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col justify-center  items-start max-w-[700px] h-[clamp(10rem,10vw,30rem)] md:h-[clamp(10rem,30vw,100rem)] w-full px-6 md:px-10 mx-auto mt-10 sm:mt-16 md:mt-24 lg:mt-32">
+      <div className="flex flex-col my-auto justify-center  items-start max-w-[700px] h-[clamp(10rem,10vw,30rem)] md:h-[clamp(10rem,30vw,100rem)] w-full px-6 md:px-10 mx-auto  sm:mt-16 md:mt-24 lg:mt-32">
         <Image
           src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
           alt="logo"
