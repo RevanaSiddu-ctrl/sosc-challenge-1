@@ -8,13 +8,13 @@ export default function Events(){
         <>
         <NavBar/>
 
-        <div className="w-full  relative mt-[90px] overflow-x-hidden">
+        <div className="w-full  relative mt-[50px] overflow-x-hidden">
         <img 
         src="https://sosc.org.in/_astro/event.DQU1qtO9_Z1ymQy6.webp" 
         alt="bgimg"
         height={100}
         width={100}
-         className="w-full h-[500px] brightness-50"/>
+         className="w-full h-[400px] brightness-50"/>
 
          <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h1 className="text-white text-3xl font-bold">Our Events</h1>

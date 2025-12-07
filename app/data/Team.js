@@ -1,4 +1,4 @@
-export const teamData = [
+const teamData = [
  
   {
     id: 1,
@@ -124,3 +124,5 @@ export const teamData = [
     image: "https://github.com/techshetty.png"
   }
 ];
+
+export default teamData;

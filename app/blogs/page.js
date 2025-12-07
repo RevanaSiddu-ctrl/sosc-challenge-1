@@ -9,7 +9,7 @@ export default function Blogs() {
     <>
       <NavBar />
 
-      <div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+      <div className="w-full h-[400px] relative mt-[50px] overflow-x-hidden">
         <Image
           src="https://sosc.org.in/_astro/blog.CMAhwL9B_Z2uelPt.webp"
           alt="img"
