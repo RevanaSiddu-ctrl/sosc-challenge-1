@@ -167,3 +167,26 @@ Fixing Typos
 
 ## Additional Context
 NA
+
+--
+name: "Adding Mobile responsiveness"
+about: Adding mobile responsiveness for the website
+title: ""
+labels: NA
+assignees: "Nivas"
+---
+
+## Bug Description
+NA
+
+##  Location
+- File: NA
+- Component: NA
+- Page/Route: NA
+
+## Steps to Reproduce
+1.NA
+
+
+## Additional Context
+NA

@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="h-[56px] bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row items-center justify-between px-12 top-0 left-0 z-50 px-50 fixed">
+      <div className="h-[56px] bg-[oklch(77.034%_0.20078_152.412)] w-screen flex flex-row items-center justify-between md:px-12 px-4 top-0 left-0 z-50 fixed">
         
         <Image
           src="https://sosc.org.in/_astro/sosc_logo_white.Bej07WYV_Z10hDC0.svg"
@@ -27,7 +27,7 @@ export default function NavBar() {
           className="h-[20px] w-auto"
         />
 
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-row md:gap-10 gap-5">
           {navLinks.map((link) => {
             
             const isActive = pathname === link.href;
