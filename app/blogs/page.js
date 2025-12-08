@@ -2,7 +2,7 @@ import Image from "next/image";
 import NavBar from "../components/NavBar";
 import { eventsData } from "../data/blogdata";
 import CardA from "../components/cardA";
-import Footer from "../comopnents/Footer";
+import Footer from "../components/Footer";
 
 export default function Blogs() {
   return (
