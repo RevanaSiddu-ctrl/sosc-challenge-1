@@ -15,7 +15,7 @@ export default function Footer(){
                     </div>
 
                     <div className="flex flex-col justify-center items-center w-[140px] gap-2 ml-40">
-                        <h2 className="text-white font-bold">Fallow Us</h2>
+                        <h2 className="text-white font-bold">Follow Us</h2>
                         <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
                         <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
                         <Link href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="underline">LinkedIn</Link>
@@ -26,8 +26,8 @@ export default function Footer(){
                     <div className="flex flex-col justify-center items-center w-[300px] gap-2 ml-20">
                         <h2 className="text-white font-bold">Others</h2>
                         <Link href="https://sosc.org.in/" className="underline">Website</Link>
-                        <Link href="https://sosc.org.in/guidelines/" className="underline">Community Guidlines</Link>
-                        <Link href="https://github.com/so-sc/code-of-conduct" className="underline">Code of Contact</Link>
+                        <Link href="https://sosc.org.in/guidelines/" className="underline">Community Guidelines</Link>
+                        <Link href="https://github.com/so-sc/code-of-conduct" className="underline">Code of Conduct</Link>
                     </div>
                 </div>
             </div>

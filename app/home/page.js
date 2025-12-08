@@ -1,13 +1,13 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default function Home(){
     return(
 <>
-    <Footer/>
+    <NavBar />
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
+    <div className="flex flex-col justify-center  items-start w-full max-w-[700px] h-auto px-10 mx-auto">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
@@ -62,7 +62,7 @@ export default function Home(){
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer />
 
 
 </>
