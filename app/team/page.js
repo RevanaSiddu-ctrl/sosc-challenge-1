@@ -2,11 +2,12 @@ import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
 import CardC from "../compnents/cardC";  
+import { teamData } from "../data/members"; // Assuming you have a data file for team members
 
 export default function Team(){
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/><div className="w-full h-[500px] relative overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
@@ -19,8 +20,8 @@ export default function Team(){
         
                 
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
+                  <h1 className="text-white text-4xl font-bold">Our Team</h1>
+                  <h1 className="text-white text-xl">
                     Meet the passionate individuals driving our community forward
                   </h1>
                 </div>
@@ -43,7 +44,7 @@ export default function Team(){
                 <div className="w-full flex flex-col items-start pt-10 pl-30">
                 <h1 className="text-2xl text-black font-bold">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                      <div className="grid md:grid-cols-3 flex flex-col gap-20 mt-10  px-10 ml-[-70px] justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
@@ -62,3 +63,4 @@ export default function Team(){
         </>
     );
 }
+<teamData/>
