@@ -8,7 +8,7 @@ export default function Events(){
         <>
         <NavBar/>
 
-        <div className="w-full  relative mt-[90px] overflow-x-hidden">
+        <div className="w-full  h-full relative mt-[90px] overflow-x-hidden">
         <img 
         src="https://sosc.org.in/_astro/event.DQU1qtO9_Z1ymQy6.webp" 
         alt="bgimg"
