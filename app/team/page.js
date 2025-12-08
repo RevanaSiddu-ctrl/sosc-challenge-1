@@ -1,20 +1,22 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
+import { teamData } from "../data/members";
 import Footer from "../compnents/Footer"; 
 import CardC from "../compnents/cardC";  
 
 export default function Team(){
     return(
-        <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <div className= "w-screen">
+        <NavBar/>
+        <div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
                   width={100}
-                  height={100}
+                  height ={100}
                   unoptimized
                   loading="eager"
-                  className="w-full h-full object-cover brightness-50"
+                  className="w-full h-full object-cover brightness-50 "
                 />
         
                 
@@ -26,7 +28,7 @@ export default function Team(){
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
+              <div className="w-full h-[350px] flex flex-col items-start pt-10 ml-40 pl-30">
                 <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
                 
                 <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
@@ -41,9 +43,9 @@ export default function Team(){
                 </div>
 
                 <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
+                <h1 className="text-2xl text-black font-bold ml-40">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                      <div className="grid grid-cols-3 gap-5 mt-10 ml-30  px-10  justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
@@ -59,6 +61,6 @@ export default function Team(){
               </div>
 
               <Footer/>
-        </>
+        </div>
     );
 }
