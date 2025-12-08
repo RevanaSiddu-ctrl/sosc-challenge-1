@@ -1,7 +1,13 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer"; 
+import CardC from "../components/cardC";  
+
+const teamData = [
+  { id: 1, image: "https://sosc.org.in/team/member1.jpg", name: "Alice", role: "Frontend Developer" },
+  { id: 2, image: "https://sosc.org.in/team/member2.jpg", name: "Bob", role: "Backend Engineer" },
+  { id: 3, image: "https://sosc.org.in/team/member3.jpg", name: "Charlie", role: "Community Manager" },
+];
 
 export default function Team(){
     return(
