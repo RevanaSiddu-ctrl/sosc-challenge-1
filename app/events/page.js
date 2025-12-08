@@ -1,7 +1,7 @@
-import NavBar from "../compnents/NavBar";
+import NavBar from "../components/NavBar";
 import { eventsData } from "../data/Events";
-import CardB from "../compnents/cardB";
-import Footer from "../compnents/Footer";
+import CardB from "../components/cardB";
+import Footer from "../components/Footer";
 
 export default function Events(){
     return(
@@ -24,7 +24,7 @@ export default function Events(){
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 mt-10 px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 px-5 md:px-20">
             {eventsData.map((event) => (
                 <CardB
                 key={event.id}
