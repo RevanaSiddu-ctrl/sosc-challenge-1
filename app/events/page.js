@@ -1,12 +1,12 @@
-import NavBar from "../compnents/NavBar";
+
 import { eventsData } from "../data/Events";
-import CardB from "../compnents/cardB";
-import Footer from "../compnents/Footer";
+import CardB from "../components/cardB";
+
 
 export default function Events(){
     return(
         <>
-        <NavBar/>
+        
 
         <div className="w-full  relative mt-[90px] overflow-x-hidden">
         <img 
@@ -34,7 +34,7 @@ export default function Events(){
                 location={event.location} />
             ))} 
         </div>
-        <Footer/>
+        
         </>
     )
 }
