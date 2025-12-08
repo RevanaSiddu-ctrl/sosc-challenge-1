@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  
+  --default-font-family: "Baloo 2 Variable", system-ui;
+
+
+  --font-sans: var(--default-font-family);
+  --font-mono: "Fira Code", monospace;
 }
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: white;
+    --background: #171717;
     --foreground: #ededed;
   }
 }
 
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+  font-family: var(--default-font-family);
+  margin: 0;
+  padding: 0;
 }
+
+
+body {
+  font-family: var(--font-baloo2), system-ui, sans-serif;
+}
+
