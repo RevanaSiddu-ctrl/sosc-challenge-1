@@ -1,36 +1,57 @@
 import Link from "next/link";
 
-
-export default function Footer(){
-    return(
-        <>
-            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full h-[400px] flex flex-row mt-10">
+export default function Footer() {
+  return (
+    <footer className="bg-[oklch(77.034%_0.20078_152.412)] text-white py-12 px-6 mt-16">
+      
+     
+      <div className=" max-w-[1200px] mx-auto  grid  grid-cols-1  sm:grid-cols-2  md:grid-cols-3  gap-10 text-center md:text-left
+      ">
         
-                <div className="h-[90%] flex felx-row">
+       
+        <div>
+          <h2 className="text-xl font-bold mb-3">
+            Sahyadri Open Source Community
+          </h2>
+          <p className="text-sm leading-relaxed">
+            Sahyadri College of Engineering and Management, Adyar,
+            Mangalore - 575007 IN
+          </p>
+          <a
+            href="mailto:sosc@sahyadri.edu.in"
+            className="underline text-sm block mt-2"
+          >
+            sosc@sahyadri.edu.in
+          </a>
+          <p className="text-sm mt-1">+91 79941 34420</p>
+        </div>
 
-                    <div className="flex flex-col justify-center  gap-2 ml-10 w-[100%]">
-                        <h2 className="text-white text-2xl text-bold ">Sahyadri Open Source Community</h2>
-                        <h4 className="text-white">Sahyadri College of Engineering and Management, Adyar, Mangalore - 575007 IN</h4>
-                        <Link href="https://sosc.org.in" className="underline">sosc.org.in</Link>
-                    </div>
+       
+        <div className="flex flex-col items-center md:items-start md:ml-[400px]">
+          <h2 className="text-sm font-bold mb-3">FOLLOW US</h2>
+          <div className="flex flex-col gap-2 text-sm">
+            <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
+            <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
+            <Link href="https://www.linkedin.com/company/sosc-sahyadri/" className="underline">LinkedIn</Link>
+            <Link href="https://x.com/sosc_sahyadri" className="underline">X</Link>
+            <Link href="https://www.youtube.com/channel/UCk8nlSMwUT-jhEtamMF-V-w" className="underline">YouTube</Link>
+          </div>
+        </div>
 
-                    <div className="flex flex-col justify-center items-center w-[140px] gap-2 ml-40">
-                        <h2 className="text-white font-bold">Fallow Us</h2>
-                        <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
-                        <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
-                        <Link href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="underline">LinkedIn</Link>
-                        <Link href="https://x.com/sosc_sahyadri?t=y9WZsgmE1Nh5mfq-i6Ne2A&s=08 " className="underline">X</Link>
-                        <Link href="https://www.youtube.com/channel/UCk8nlSMwUT-jhEtamMF-V-w" className="underline">YouTube</Link>
-                    </div>
+        
+        <div className="flex flex-col items-center md:items-start md:ml-[200px]">
+          <h2 className="text-sm font-bold mb-3">OTHERS</h2>
+          <div className="flex flex-col gap-2 text-sm">
+            <Link href="/" className="underline">Website</Link>
+            <Link href="/guidelines" className="underline">Community Guidelines</Link>
+            <Link href="https://github.com/so-sc/code-of-conduct" className="underline">Code of Conduct</Link>
+          </div>
+        </div>
+      </div>
 
-                    <div className="flex flex-col justify-center items-center w-[300px] gap-2 ml-20">
-                        <h2 className="text-white font-bold">Others</h2>
-                        <Link href="https://sosc.org.in/" className="underline">Website</Link>
-                        <Link href="https://sosc.org.in/guidelines/" className="underline">Community Guidlines</Link>
-                        <Link href="https://github.com/so-sc/code-of-conduct" className="underline">Code of Contact</Link>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+      <div className="text-center text-xs mt-10">
+        SOSC © 2025 All Rights Reserved.
+      </div>
+    </footer>
+  );
 }
