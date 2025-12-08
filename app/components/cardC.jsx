@@ -1,6 +1,6 @@
 
 
-export default function CardC({image, name, role}){
+export default function cardC({image, name, role}){
     return(
         <>
             <div className="flex flex-col items-center justify-center h-[250px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">

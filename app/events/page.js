@@ -1,7 +1,8 @@
-import NavBar from "../compnents/NavBar";
+import NavBar from "../components/NavBar";
 import { eventsData } from "../data/Events";
-import CardB from "../compnents/cardB";
-import Footer from "../compnents/Footer";
+import CardB from "../components/cardB";
+
+import Footer from "../components/Footer";
 
 export default function Events(){
     return(

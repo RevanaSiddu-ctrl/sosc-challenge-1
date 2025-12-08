@@ -1,4 +1,4 @@
-export default function CardA({ title, date, image, author }) {
+export default function cardA({ title, date, image, author }) {
   return (
     <>
       <div className="h-[200px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
