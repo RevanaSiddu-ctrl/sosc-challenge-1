@@ -22,8 +22,8 @@ export default function Blogs() {
 
         
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-5xl font-bold">Blogs</h1>
-          <h1 className="text-white text-2xl font-extrabold">
+          <h1 className="text-white text-5xl font-extrabold">Blogs</h1>
+          <h1 className="text-white text-2xl ">
             Dive into articles, insights, and updates from our community.
           </h1>
         </div>

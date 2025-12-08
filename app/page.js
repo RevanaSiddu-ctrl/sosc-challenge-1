@@ -1,13 +1,13 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer";
+import NavBar from "./compnents/NavBar";
+import Footer from "./compnents/Footer";
 
 export default function Home(){
     return(
 <>
-    <Footer/>
+    <NavBar/>
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
+    <div className="flex flex-col justify-center  items-start max-w-xl space-y-4 h-[700px] px-20 ml-120">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
@@ -16,7 +16,7 @@ export default function Home(){
              height={100}
             className="mb-3"
             />
-             <h2 className="text-black text-2xl font-bold mb-4">
+             <h2 className="text-black text-2xl font-bold font-baloo mb-4">
                  Sahyadri Open Source Community
             </h2>
             <p className="text-gray-700 text-md max-w-[700px] leading-relaxed">
@@ -52,7 +52,7 @@ export default function Home(){
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <img src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
-            <h2 className="text-black font-bold text-2xl">Get Connected</h2>
+            <h2 className="text-black font-bold text-2xl">Get Connected!</h2>
             <p className="text-md font-light text-black w-[600px]">
                 Meet people with similar interest to work together on projects and host events to build a better collaborative environment.
                  We are more than 100 members with interests on various fields of technology here to know each other and get connected.
@@ -62,7 +62,7 @@ export default function Home(){
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer/>
 
 
 </>
