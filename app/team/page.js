@@ -1,7 +1,8 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import CardC from "../compnents/cardC";
+import { teamData } from "../data/members";  
 
 export default function Team(){
     return(
@@ -18,39 +19,38 @@ export default function Team(){
                 />
         
                 
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                  <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-6">Our Team</h1>
+                  <p className="text-white text-xl md:text-2xl font-normal">
                     Meet the passionate individuals driving our community forward
-                  </h1>
+                  </p>
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
+              <div className="w-full flex flex-col items-center pt-16 px-8 md:px-12 lg:px-20 mb-16">
+                <h1 className="text-4xl md:text-5xl text-black font-bold mb-12">Co-Ordinator</h1>
                 
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
+                <div className="flex flex-col items-center justify-center h-[300px] w-full max-w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] rounded-lg p-6 bg-white">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
                 alt="co-ordinator" 
                 height={100} 
                 width={100} 
-                className="rounded-[50%] h-[100px] w-[100px]"/>
-                <h1 className="text-black font-bold my-2">Dr. Mustafa Basthikodi</h1>
-                <h3 className="text-gray-950">Faculty Coordinator</h3>
+                className="rounded-[50%] h-[100px] w-[100px] object-cover"/>
+                <h1 className="text-black font-bold my-2 text-xl">Dr. Mustafa Basthikodi</h1>
+                <h3 className="text-gray-700">Faculty Coordinator</h3>
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
-                <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                <div className="w-full flex flex-col items-center pt-16 px-8 md:px-12 lg:px-20 mb-16">
+                <h1 className="text-4xl md:text-5xl text-black font-bold mb-12">Community Members</h1>
+                <div className="flex justify-center items-center mt-10 w-full">
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mt-10 max-w-7xl mx-auto">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
                             image={data.image}
                             name={data.name}
                             role={data.role}
-                            
                           />
                         ))}
                       </div>
