@@ -1,11 +1,12 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer";
+import Link from "next/link";
 
 export default function Home(){
     return(
 <>
-    <Footer/>
+    <NavBar/>
 
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
     
@@ -24,8 +25,9 @@ export default function Home(){
                  helping students become part of the open-source ecosystem through 
                 training and skill development.
             </p>
+            <Link href="/guidlines">
             <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
-
+            </Link>
     </div>
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
         <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
@@ -58,11 +60,16 @@ export default function Home(){
                  We are more than 100 members with interests on various fields of technology here to know each other and get connected.
                   Meet our members to know more about us and build something cool!
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button>
+            
+<Link href="/team">
+                <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">
+                    Learn More
+                </button>
+            </Link>
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer/>
 
 
 </>

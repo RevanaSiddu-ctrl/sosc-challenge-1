@@ -15,7 +15,7 @@ export default function Footer(){
                     </div>
 
                     <div className="flex flex-col justify-center items-center w-[140px] gap-2 ml-40">
-                        <h2 className="text-white font-bold">Fallow Us</h2>
+                        <h2 className="text-white font-bold">Follow Us</h2>
                         <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
                         <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
                         <Link href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="underline">LinkedIn</Link>
