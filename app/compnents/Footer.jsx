@@ -1,36 +1,33 @@
-import Link from "next/link";
+export default function Footer() {
+ return (
+ <>
+ <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full py-10 px-6 mt-10">
+ <div className="flex flex-col md:flex-row justify-between gap-10 max-w-6xl mx-auto">
 
 
-export default function Footer(){
-    return(
-        <>
-            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full h-[400px] flex flex-row mt-10">
-        
-                <div className="h-[90%] flex felx-row">
+ <div className="flex flex-col gap-2 text-white w-full md:w-1/3">
+ <h2 className="text-2xl font-bold">Sahyadri Open Source Community</h2>
+ <p>Sahyadri College of Engineering and Management, Adyar, Mangalore - 575007 IN</p>
+ <a href="https://sosc.org.in" className="underline">sosc.org.in</a>
+ </div>
 
-                    <div className="flex flex-col justify-center  gap-2 ml-10 w-[100%]">
-                        <h2 className="text-white text-2xl text-bold ">Sahyadri Open Source Community</h2>
-                        <h4 className="text-white">Sahyadri College of Engineering and Management, Adyar, Mangalore - 575007 IN</h4>
-                        <Link href="https://sosc.org.in" className="underline">sosc.org.in</Link>
-                    </div>
+ <div className="flex flex-col gap-2 text-white">
+ <h2 className="font-bold">Follow Us</h2>
+ <a href="https://github.com/so-sc" className="hover:underline">GitHub</a>
+ <a href="https://www.instagram.com/sosc.sahyadri/" className="hover:underline">Instagram</a>
+ <a href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="hover:underline">LinkedIn</a>
+ <a href="https://x.com/sosc_sahyadri?t=y9WZsgmE1Nh5mfq-i6Ne2A&s=08" className="hover:underline">X</a>
+ <a href="https://www.youtube.com/channel/UCk8nlSMwUT-jhEtamMF-V-w" className="hover:underline">YouTube</a>
+ </div>
 
-                    <div className="flex flex-col justify-center items-center w-[140px] gap-2 ml-40">
-                        <h2 className="text-white font-bold">Fallow Us</h2>
-                        <Link href="https://github.com/so-sc" className="underline">GitHub</Link>
-                        <Link href="https://www.instagram.com/sosc.sahyadri/" className="underline">Instagram</Link>
-                        <Link href="https://www.linkedin.com/company/sosc-sahyadri/posts/?feedView=all" className="underline">LinkedIn</Link>
-                        <Link href="https://x.com/sosc_sahyadri?t=y9WZsgmE1Nh5mfq-i6Ne2A&s=08 " className="underline">X</Link>
-                        <Link href="https://www.youtube.com/channel/UCk8nlSMwUT-jhEtamMF-V-w" className="underline">YouTube</Link>
-                    </div>
-
-                    <div className="flex flex-col justify-center items-center w-[300px] gap-2 ml-20">
-                        <h2 className="text-white font-bold">Others</h2>
-                        <Link href="https://sosc.org.in/" className="underline">Website</Link>
-                        <Link href="https://sosc.org.in/guidelines/" className="underline">Community Guidlines</Link>
-                        <Link href="https://github.com/so-sc/code-of-conduct" className="underline">Code of Contact</Link>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+ <div className="flex flex-col gap-2 text-white">
+ <h2 className="font-bold">Others</h2>
+ <a href="https://sosc.org.in/" className="hover:underline">Website</a>
+ <a href="https://sosc.org.in/guidelines/" className="hover:underline">Community Guidelines</a>
+ <a href="https://github.com/so-sc/code-of-conduct" className="hover:underline">Code of Conduct</a>
+ </div>
+ </div>
+ </div>
+ </>
+ )
 }
