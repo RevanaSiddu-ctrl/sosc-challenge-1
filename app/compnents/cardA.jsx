@@ -1,8 +1,8 @@
 export default function CardA({ title, date, image, author }) {
   return (
     <>
-      <div className="h-[200px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
-        <img
+      <div className="w-full max-w-xs sm:max-w-sm bg-white flex flex-col overflow-hidden rounded-lg shadow-md shadow-black/20 transition-shadow hover:shadow-lg">
+      <img
           src={image}
           alt="img"
           className="h-[45%] w-full object-cover rounded-t-md"

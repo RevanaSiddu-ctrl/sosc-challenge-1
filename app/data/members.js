@@ -34,7 +34,7 @@ export const teamData = [
     id: 6,
     name: "Apeksha L Naik",
     role: "Community Member",
-    image: "	https://github.com/Apeksha-L-Naik.png"
+    image: "https://github.com/Apeksha-L-Naik.png"
   },
   {
     id: 7,
@@ -124,3 +124,4 @@ export const teamData = [
     image: "https://github.com/techshetty.png"
   }
 ];
+export default teamData;
