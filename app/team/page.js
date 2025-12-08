@@ -7,7 +7,7 @@ import { teamData } from "../data/members";
 export default function Team(){
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/><div className="w-full h-auto md:h-[400px] relative mt-24 md:mt-[90px] overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
@@ -15,7 +15,7 @@ export default function Team(){
                   height={100}
                   unoptimized
                   loading="eager"
-                  className="w-full h-full object-cover brightness-50"
+                  className="w-full h-[300px] md:h-full object-cover brightness-50"
                 />
         
                 
@@ -27,10 +27,10 @@ export default function Team(){
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
+             <div className="w-full flex flex-col items-center pt-10 px-4 md:px-10">
                 <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
                 
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
+                <div className="flex flex-col items-center justify-center h-[300px] w-full max-w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
                 alt="co-ordinator" 
                 height={100} 
@@ -41,10 +41,11 @@ export default function Team(){
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
+              <div className="w-full flex flex-col items-center pt-10 px-4 md:px-10">
+
                 <h1 className="text-2xl text-black font-bold">Community Members</h1>
                 <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 mt-10 justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
