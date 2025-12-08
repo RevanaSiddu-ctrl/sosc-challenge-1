@@ -107,9 +107,9 @@ assignees: "rishan"
 ---
 
 ## Bug Description
-The routing for the *Blogs* and *Events* buttons in the Navbar is incorrect.  
-- Clicking *Blogs* opens the *Events* page.  
-- Clicking *Events* opens the *Blogs* page.  
+The routing for the Blogs* and *Events* buttons in the Navbar is incorrect.  
+- Clicking Blogs* opens the *Events* page.  
+- Clicking Events* opens the *Blogs* page.  
 
 Each button should navigate to its correct route.
 
