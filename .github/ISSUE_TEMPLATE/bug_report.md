@@ -131,3 +131,6 @@ When the user scrolls, the navbar moves upward and disappears instead of remaini
 ## Additional Context
 The Navbar should remain visible at all times during scrolling.  
 A UI fix is required so the navbar stays positioned at the top, likely by applying `position: fixed` or equivalent Tailwind classes.
+
+
+

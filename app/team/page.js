@@ -30,7 +30,7 @@ export default function Team() {
         </div>
       </div>
 
-      <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-2 md:pl-30">
+      <div className="w-full h-[350px] flex flex-col text-center items-center md:items-start pt-10 md:pl-30">
         <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
 
         <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
@@ -46,7 +46,7 @@ export default function Team() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-start pt-10 pl-2 md:pl-30">
+      <div className="w-full flex flex-col items-center md:items-start pt-10  md:pl-30">
         <h1 className="text-2xl text-black font-bold">Community Members</h1>
         <div className="flex justify-center items-center mt-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-10  px-0 md:px-10 ml-0 md:ml-[-50] justify-center items-center">
