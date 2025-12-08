@@ -1,5 +1,23 @@
 export const teamData = [
  
+   {
+    id: 18,
+    name: "Amrithraj N",
+    role: "Organizer",
+    image: "https://github.com/ritham404.png"
+  },
+  {
+    id: 19,
+    name: "Himanshu Shetty",
+    role: "Organizer",
+    image: "https://github.com/himanshukt03.png"
+  },
+  {
+    id: 20,
+    name: "Pratheek G Shetty",
+    role: "Organizer",
+    image: "https://github.com/techshetty.png"
+  },
   {
     id: 1,
     name: "Shreelakshmi Pai",
@@ -9,7 +27,7 @@ export const teamData = [
   {
     id: 2,
     name: "Ashika",
-    role: "SOSWC Representative",
+    role: "SOSC Representative",
     image: "https://github.com/askashika.png"
   },
   {
@@ -102,25 +120,8 @@ export const teamData = [
     name: "Yash Laxman",
     role: "Community Member",
     image: "https://github.com/JustModo.png"
-  },
+  }
 
   // THIRD IMAGE SET
-  {
-    id: 18,
-    name: "Amrithraj N",
-    role: "Organizer",
-    image: "https://github.com/ritham404.png"
-  },
-  {
-    id: 19,
-    name: "Himanshu Shetty",
-    role: "Organizer",
-    image: "https://github.com/himanshukt03.png"
-  },
-  {
-    id: 20,
-    name: "Pratheek G Shetty",
-    role: "Organizer",
-    image: "https://github.com/techshetty.png"
-  }
+ 
 ];

@@ -1,11 +1,15 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-export default function Home(){
+import Link from "next/link";
+
+
+
+export default function Home(){ 
     return(
 <>
-    <Footer/>
+    <NavBar/>
 
     <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
     
@@ -24,7 +28,15 @@ export default function Home(){
                  helping students become part of the open-source ecosystem through 
                 training and skill development.
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
+            {/* <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button> */}
+            
+
+<Link href="/guidelines">
+  <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">
+    Guidelines
+  </button>
+</Link>
+
 
     </div>
     <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
@@ -58,11 +70,17 @@ export default function Home(){
                  We are more than 100 members with interests on various fields of technology here to know each other and get connected.
                   Meet our members to know more about us and build something cool!
             </p>
-            <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button>
+            {/* <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button> */}
+
+            <Link href="/team">
+  <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">
+    Learn More
+  </button>
+</Link>
         </div>
     </div> 
 
-    <NavBar/>
+    <Footer/>
 
 
 </>

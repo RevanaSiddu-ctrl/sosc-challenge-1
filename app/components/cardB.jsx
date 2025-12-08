@@ -1,4 +1,4 @@
-export default function CardB({ image, title, location, date }) {
+export default function cardB({ image, title, location, date }) {
   return (
     <div className="flex w-full h-[200px] bg-white rounded-xl shadow-md overflow-hidden cursor-pointer hover:">
 
