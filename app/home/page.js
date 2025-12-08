@@ -5,9 +5,9 @@ import Footer from "../compnents/Footer";
 export default function Home(){
     return(
 <>
-    <Footer/>
+     <NavBar/>
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
+    <div className="flex flex-col  justify-center  items-start md:w-[700px] md:h-[700px] md:px-5 md:mb-0 md:mt-0 mt-20 mb-10 p-5  md:ml-90 ">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
@@ -27,21 +27,23 @@ export default function Home(){
             <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
 
     </div>
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
-        <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
+    <div className="h-[500px] w-full flex md:flex-row flex-col items-center md:pl-[10%] p-5">
+        <img className="hidden md:block " src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Get Trained by Experts</h2>
-            <p className="text-md font-light text-black w-[600px]">
+            <p className="text-md font-light text-black md:w-[600px]">
                 SOSC is all about helping each other to learn and improve, we conduct workshops and trainings led by speakers from other technical communities, and student experts. 
                 Keeping up to date with latest technologies and learning new things is what most of love. 
                 Here is your chance to attend workshops, training and even host non-profit events to help others.
             </p>
         </div>
+        <img className=" block md:hidden" src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
+        
     </div>  
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
+    <div className="h-[500px] w-full flex md:flex-row flex-col items-center md:pl-[15%] p-5">
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Explore clubs and Activities</h2>
-            <p className="text-md font-light text-black w-[600px]">
+            <p className="text-md font-light text-black md:w-[600px]">
                 SOSC is a conglomeration of clubs and individuals who contribute to the community by helping us conduct events and activities. 
                 there are numerous clubs and experts who help shape the community to be pro-active. 
                 Mozilla Campus Clubs, Developer Students clubs, and the GitHub Campus Expert are to name a few
@@ -49,20 +51,24 @@ export default function Home(){
         </div>
         <img src="	https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
     </div> 
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
-        <img src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
+    <div className="h-[500px] w-full flex md:flex-row flex-col items-center md:pl-[10%] p-5 ">
+        <img className="hidden md:block" src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
         <div className="flex flex-col items-start gap-3">
             <h2 className="text-black font-bold text-2xl">Get Connected</h2>
-            <p className="text-md font-light text-black w-[600px]">
+            <p className="text-md font-light text-black md:w-[600px]">
                 Meet people with similar interest to work together on projects and host events to build a better collaborative environment.
                  We are more than 100 members with interests on various fields of technology here to know each other and get connected.
                   Meet our members to know more about us and build something cool!
             </p>
             <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Learn More</button>
         </div>
+                <img className="md:hidden block" src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
     </div> 
 
-    <NavBar/>
+    <div className="md:m-0 mt-60">
+       <Footer/>
+    </div>
+    
 
 
 </>
