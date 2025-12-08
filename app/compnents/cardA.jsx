@@ -1,22 +1,38 @@
 export default function CardA({ title, date, image, author }) {
   return (
     <>
-      <div className="h-[200px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
+      <div
+        className="
+          w-full 
+          bg-white 
+          shadow-md 
+          shadow-black/20 
+          rounded-lg 
+          overflow-hidden 
+          hover:shadow-xl 
+          transition 
+          duration-300
+          p-4
+        "
+      >
+        {/* IMAGE */}
         <img
           src={image}
           alt="img"
-          className="h-[45%] w-full object-cover rounded-t-md"
+          className="w-full h-40 md:h-48 object-cover rounded-md"
         />
 
-        <div className="flex flex-col justify-center items-center p-1">
-          <p className="text-md font-medium mt-1 text-black">{date}</p>
-          <h1 className="text-md font-bold mt-1 text-center text-black">{title}</h1>
-          <p className="text-sm font-extralight mt-2 text-black">{author}</p>
+        {/* CONTENT */}
+        <div className="mt-3">
+          <p className="text-sm font-medium text-gray-600">{date}</p>
+
+          <h1 className="text-lg font-bold mt-1 text-black leading-tight">
+            {title}
+          </h1>
+
+          <p className="text-sm font-light mt-2 text-gray-700">{author}</p>
         </div>
       </div>
     </>
   );
 }
-
-
-
