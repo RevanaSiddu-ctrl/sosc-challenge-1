@@ -1,7 +1,8 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import { teamData } from "../data/members";
+import NavBar from "../../compnents/NavBar";
+import Footer from "../../compnents/Footer";
+import CardC from "../../compnents/cardC";
 
 export default function Team(){
     return(
