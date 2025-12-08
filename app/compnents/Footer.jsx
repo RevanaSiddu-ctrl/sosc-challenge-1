@@ -4,9 +4,10 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <>
-            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full h-[400px] flex flex-row mt-10">
+            <div className="bg-[oklch(77.034%_0.20078_152.412)] w-full flex flex-row ">
+
         
-                <div className="h-[90%] flex felx-row">
+                <div className="h-[90%] flex flex-row">
 
                     <div className="flex flex-col justify-center  gap-2 ml-10 w-[100%]">
                         <h2 className="text-white text-2xl text-bold ">Sahyadri Open Source Community</h2>
