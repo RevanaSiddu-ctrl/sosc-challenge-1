@@ -1,71 +1,68 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
-import { teamData as membersData } from "../data/members";
-export default function Team(){
-    const coordinatorData = {
-        image: 'https://sosc.org.in/team/mustafa_asthikodi.jpg',
-        name: 'Dr. Mustafa Basthikodi',
-        role: 'Faculty Coordinator'
-    };
-    const communityMemberData = membersData.filter(member => member.role !== 'Alumni');
-    const teamData = communityMemberData;
-    const alumniData = membersData.filter(member => member.role === 'Alumni');
-return(
-        <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
-                <Image
-                  src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
-                  alt="img"
-                  width={100}
-                  height={100}
-                  unoptimized
-                  loading="eager"
-                  className="w-full h-full object-cover brightness-50"
-                />
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
-                    Meet the passionate individuals driving our community forward
-                  </h1>
-                </div>
-              </div>
+import Footer from "../compnents/Footer";
+import { teamData } from "../data/members";
+import CardC from "../compnents/cardC";
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
-                
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
-                <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
-                alt="co-ordinator" 
-                height={100} 
-                width={100} 
-                className="rounded-[50%] h-[100px] w-[100px]"/>
-                <h1 className="text-black font-bold my-2">Dr. Mustafa Basthikodi</h1>
-                <h3 className="text-gray-950">Faculty Coordinator</h3>
-                </div>
-                </div>
+export default function Team() {
+ return (
+ <>
+ <NavBar />
 
-                <div className="w-full flex flex-col items-start pt-10 px-5 md:px-10">
-                <h1 className="text-2xl text-black font-bold w-full max-w-sm lg:max-w-4xl text-left mx-auto">Community Members</h1>
-                <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
-                        {teamData.map((data) => (
-                          <CardC
-                            key={data.id}
-                            image={data.image}
-                            name={data.name}
-                            role={data.role}
-                            
-                          />
-                        ))}
-                      </div>
-                      </div>
-                      
+ <div className="w-full pt-[70px] h-[300px] md:h-[400px] relative overflow-x-hidden">
+ <Image
+ src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
+ alt="img"
+ width={100}
+ height={100}
+ unoptimized
+ loading="eager"
+ className="w-full h-full object-cover brightness-50"
+ />
 
-              </div>
 
-              <Footer/>
-        </>
-    );
+ <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
+ <h1 className="text-white text-3xl md:text-5xl font-bold text-center">Our Team</h1>
+ <h1 className="text-white text-lg md:text-2xl font-extrabold text-center mt-2">
+ Meet the passionate individuals driving our community forward
+ </h1>
+ </div>
+ </div>
+
+ <div className="w-full flex flex-col items-center pt-10 px-5">
+ <div className="w-full max-w-7xl">
+ <h1 className="text-xl md:text-2xl text-black font-bold mb-6">Co-ordinator</h1>
+
+ <div className="flex flex-col items-center justify-center h-auto w-full max-w-[350px] shadow-[0_0_8px_rgba(0,0,0,0.25)] py-8 rounded-lg bg-white">
+ <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
+ alt="co-ordinator"
+ height={100}
+ width={100}
+ className="rounded-[50%] h-[100px] w-[100px]" />
+ <h1 className="text-black font-bold my-2 text-center">Dr. Mustafa Basthikodi</h1>
+ <h3 className="text-gray-600 text-center">Faculty Co-ordinator</h3>
+ </div>
+ </div>
+ </div>
+
+ <div className="w-full flex flex-col items-center pt-10 px-5 pb-10">
+ <div className="w-full max-w-7xl">
+ <h1 className="text-xl md:text-2xl text-black font-bold mb-6">Community Member</h1>
+
+ <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+ {teamData?.map((data) => (
+ <CardC
+ key={data.id}
+ image={data.image}
+ name={data.name}
+ role={data.role}
+ />
+ ))}
+ </div>
+ </div>
+ </div>
+
+ <Footer />
+ </>
+ );
 }
