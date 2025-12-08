@@ -1,8 +1,8 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
+import NavBar from "../components/NavBar";
 import { eventsData } from "../data/blogdata";
-import CardA from "../compnents/cardA";
-import Footer from "../compnents/Footer";
+import CardA from "../components/cardA";
+import Footer from "../components/Footer";
 
 export default function Blogs() {
   return (
