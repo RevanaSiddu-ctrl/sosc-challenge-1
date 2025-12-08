@@ -1,9 +1,15 @@
 export default function CardB({ image, title, location, date }) {
   return (
-    <div className="flex w-full h-[200px] bg-white rounded-xl shadow-md overflow-hidden cursor-pointer hover:">
-
-      
-      <div className="w-[40%] h-full">
+    <div
+      className="
+        flex flex-col md:flex-row
+        w-full
+        h-auto md:h-[200px]
+        bg-white rounded-xl shadow-md overflow-hidden cursor-pointer
+      "
+    >
+      {/* IMAGE */}
+      <div className="w-full md:w-[40%] h-[180px] md:h-full">
         <img
           src={image}
           alt={title}
@@ -11,16 +17,24 @@ export default function CardB({ image, title, location, date }) {
         />
       </div>
 
-      <div className="w-[60%] p-5 flex flex-col justify-between">
-
+      {/* TEXT SECTION */}
+      <div
+        className="
+          w-full md:w-[60%]
+          p-4 md:p-5
+          flex flex-col justify-between
+          text-center md:text-left
+        "
+      >
         <div>
-          <h1 className="text-xl font-bold text-black hover:text-[oklch(77.034%_0.20078_152.412)]">{title}</h1>
+          <h1 className="text-lg md:text-xl font-bold text-black hover:text-[oklch(77.034%_0.20078_152.412)]">
+            {title}
+          </h1>
           <p className="text-gray-700 text-sm mt-2">{location}</p>
         </div>
 
-        <p className="text-gray-500 text-sm">{date}</p>
+        <p className="text-gray-500 text-sm mt-3 md:mt-0">{date}</p>
       </div>
-
     </div>
   );
 }
