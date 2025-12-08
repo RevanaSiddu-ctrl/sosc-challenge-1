@@ -70,7 +70,9 @@ export default function Home() {
           </div>
 
           <div className="lg:pl-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Get Trained by Experts</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">
+  Get Trained by Experts
+</h2>
             <p className="text-gray-800 text-base lg:text-lg leading-relaxed">
               SOSC is all about helping each other to learn and improve. We conduct workshops and trainings led by speakers from other
               technical communities and student experts. Keeping up to date with the latest technologies and learning new things is what we love — attend workshops, trainings and host non-profit events to help others.
@@ -82,7 +84,7 @@ export default function Home() {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="lg:pl-12 order-2 lg:order-1">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Explore clubs and Activities</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">Explore clubs and Activities</h2>
             <p className="text-gray-800 text-base lg:text-lg leading-relaxed">
               SOSC is a collaboration of clubs and individuals who shape the community by running events and activities. Mozilla Campus Clubs,
               Developer Student Clubs, and GitHub Campus Experts are just a few groups that help us stay active and engaged.
@@ -121,7 +123,7 @@ export default function Home() {
           </div>
 
           <div className="lg:pl-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Get Connected</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-black">Get Connected</h2>
             <p className="text-gray-800 text-base lg:text-lg leading-relaxed mb-6">
               Meet people with similar interests to work together on projects and host events to build a better collaborative environment.
               We have many members across technology fields — connect with them and build something cool.
