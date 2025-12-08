@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { teamData } from "../data/teamData";
+
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
 import CardC from "../compnents/cardC";  
