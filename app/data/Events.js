@@ -2,14 +2,14 @@
 export const eventsData = [
   {
     id: 1,
-    title: "DevHost 2024 — November",
+    title: "DevHost 2024  November",
     location: "Sahyadri College of Engineering and Management",
     date: "November 7, 2024",
     image: "https://sosc.org.in/_astro/dev24banner.ZqZ0bhkf_9mT8n.webp",
   },
   {
     id: 2,
-    title: "DevHost 2024 — June",
+    title: "DevHost 2024  June",
     location: "Sahyadri College of Engineering and Management",
     date: "June 14, 2024",
     image: "https://sosc.org.in/_astro/dev24banner.B8pbT7XK_1RmUQH.webp",

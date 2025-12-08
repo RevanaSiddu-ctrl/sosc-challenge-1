@@ -1,12 +1,17 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
 import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import CardC from "../compnents/cardC";
+import { teamData } from "../data/members";  
 
 export default function Team(){
+
+
+
+
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/><div className="w-full h-[400px] relative  overflow-x-hidden">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
                   alt="img"
@@ -18,15 +23,15 @@ export default function Team(){
                 />
         
                 
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex flex-col items-center gap-3 justify-center">
                   <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
+                  <h1 className="text-white text">
                     Meet the passionate individuals driving our community forward
                   </h1>
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
+              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-10">
                 <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
                 
                 <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
@@ -40,10 +45,10 @@ export default function Team(){
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
-                <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                <div className="w-full flex flex-col items-start">
+                <h1 className="text-2xl text-black font-bold pl-10">Community Members</h1>
+                <div className="flex justify-center items-center p-5 ">
+                      <div className="grid md:grid-cols-3 grid-cols-1 gap-10 m:mr-5   justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
