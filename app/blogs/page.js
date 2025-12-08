@@ -1,8 +1,9 @@
 import Image from "next/image";
 import NavBar from "../compnents/NavBar";
-import { eventsData } from "../data/blogdata";
+import { blogData } from "../data/blogdata";
 import CardA from "../compnents/cardA";
 import Footer from "../compnents/Footer";
+
 
 export default function Blogs() {
   return (
@@ -31,7 +32,7 @@ export default function Blogs() {
 
      <div className="flex justify-center items-center mt-10">
       <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
-        {eventsData.map((event) => (
+        {blogData.map((event) => (
           <CardA
             key={event.id}
             title={event.title}
@@ -43,7 +44,7 @@ export default function Blogs() {
       </div>
       </div>
 
-      <Footer/>
+      <Footer></Footer>
     </>
   );
 }
