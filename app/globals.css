@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 640px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .navbar ul { display: none; /* use hamburger */ }
+  .hero { padding: 2rem; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .hero {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
