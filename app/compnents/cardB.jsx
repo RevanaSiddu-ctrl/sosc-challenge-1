@@ -11,7 +11,7 @@ export default function CardB({ image, title, location, date }) {
         />
       </div>
 
-      <div className="w-[60%] p-5 flex flex-col justify-between">
+      <div className="w-[200px] p-5 flex flex-col justify-between">
 
         <div>
           <h1 className="text-xl font-bold text-black hover:text-[oklch(77.034%_0.20078_152.412)]">{title}</h1>

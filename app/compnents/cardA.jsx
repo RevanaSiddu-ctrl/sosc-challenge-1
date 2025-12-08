@@ -1,11 +1,11 @@
 export default function CardA({ title, date, image, author }) {
   return (
     <>
-      <div className="h-[200px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
+      <div className="h-[340px] w-[350px] bg-white flex flex-col justify-center shadow-md shadow-black/40 rounded-md">
         <img
           src={image}
           alt="img"
-          className="h-[45%] w-full object-cover rounded-t-md"
+          className="h-48px w-full object-cover rounded-t-md"
         />
 
         <div className="flex flex-col justify-center items-center p-1">
