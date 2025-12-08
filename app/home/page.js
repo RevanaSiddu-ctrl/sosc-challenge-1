@@ -5,16 +5,16 @@ import Footer from "../compnents/Footer";
 export default function Home(){
     return(
 <>
-    <Footer/>
+   
 
-    <div className="flex flex-col justify-center  items-start w-[700px] h-[700px] px-10 ml-120">
+   <div className="flex flex-col justify-center items-start w-full max-w-[700px] h-auto md:h-[700px] px-5 sm:px-10 mx-auto mt-10 md:mt-20">
     
             <Image 
             src="https://sosc.org.in/_astro/sosc_logo.DBzxZ_Go_Z10hDC0.svg"
              alt="logo"
             width={100}
              height={100}
-            className="mb-3"
+            className="mb-3 mx-auto md:mx-0"
             />
              <h2 className="text-black text-2xl font-bold mb-4">
                  Sahyadri Open Source Community
@@ -27,9 +27,9 @@ export default function Home(){
             <button className="bg-[oklch(77.034%_0.20078_152.412)] w-[160px] h-[40px] rounded-3xl text-white text-sm font-bold mt-3 cursor-pointer">Community Guidilnes</button>
 
     </div>
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
+    <div className="w-full flex flex-col md:flex-row items-center mt-10 md:mt-20 px-5 md:px-[15%] gap-5 md:gap-10">
         <img src="https://sosc.org.in/_astro/hero_github.CjpTNEJ9_lPP1X.webp" alt="img1" width={500} height={500} />
-        <div className="flex flex-col items-start gap-3">
+        <div className="flex flex-col items-start gap-3 w-full md:w-[600px]">
             <h2 className="text-black font-bold text-2xl">Get Trained by Experts</h2>
             <p className="text-md font-light text-black w-[600px]">
                 SOSC is all about helping each other to learn and improve, we conduct workshops and trainings led by speakers from other technical communities, and student experts. 
@@ -38,8 +38,8 @@ export default function Home(){
             </p>
         </div>
     </div>  
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
-        <div className="flex flex-col items-start gap-3">
+    <div className="w-full flex flex-col md:flex-row items-center mt-10 md:mt-20 px-5 md:px-[15%] gap-5 md:gap-10">
+         <div className="flex flex-col items-start gap-3 w-full md:w-[600px]">
             <h2 className="text-black font-bold text-2xl">Explore clubs and Activities</h2>
             <p className="text-md font-light text-black w-[600px]">
                 SOSC is a conglomeration of clubs and individuals who contribute to the community by helping us conduct events and activities. 
@@ -47,11 +47,11 @@ export default function Home(){
                 Mozilla Campus Clubs, Developer Students clubs, and the GitHub Campus Expert are to name a few
             </p>
         </div>
-        <img src="	https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" width={500} height={500} />
+        <img src="	https://sosc.org.in/_astro/hero_clubs.DTTDV-jy_1p64vp.webp" alt="img2" className="w-full md:w-[500px] h-auto md:h-[500px] object-cover"/>
     </div> 
-    <div className="h-[500px] w-full flex flex-row items-center pl-[15%] ">
+   <div className="w-full flex flex-col md:flex-row items-center mt-10 md:mt-20 px-5 md:px-[15%] gap-5 md:gap-10">
         <img src="https://sosc.org.in/_astro/hero_connect.CV53XNoK_Z2hOGEd.webp" alt="img3" width={500} height={500} />
-        <div className="flex flex-col items-start gap-3">
+        <div className="flex flex-col items-start gap-3 w-full md:w-[600px]">
             <h2 className="text-black font-bold text-2xl">Get Connected</h2>
             <p className="text-md font-light text-black w-[600px]">
                 Meet people with similar interest to work together on projects and host events to build a better collaborative environment.
@@ -63,6 +63,7 @@ export default function Home(){
     </div> 
 
     <NavBar/>
+     <Footer/>
 
 
 </>
