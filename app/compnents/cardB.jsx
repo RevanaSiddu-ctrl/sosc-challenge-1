@@ -28,11 +28,11 @@ export default function CardB({ image, title, location, date, id, link }) {
 
       <div className="w-[60%] p-6 flex flex-col justify-between">
         <div>
-          <h1 className="text-xl md:text-2xl font-bold text-black hover:text-[oklch(77.034%_0.20078_152.412)] transition-colors mb-2">{title}</h1>
-          <p className="text-gray-700 text-base mt-2">{location}</p>
+          <h1 className="text-lg md:text-xl font-semibold text-black hover:text-[oklch(77.034%_0.20078_152.412)] transition-colors mb-2 leading-snug">{title}</h1>
+          <p className="text-gray-700 text-sm md:text-base mt-1">{location}</p>
         </div>
 
-        <p className="text-gray-600 text-base font-medium">{date}</p>
+        <p className="text-gray-600 text-sm md:text-base font-medium">{date}</p>
       </div>
     </div>
   );

@@ -8,10 +8,10 @@ export default function CardA({ title, date, image, author }) {
           className="h-[180px] w-full object-cover"
         />
 
-        <div className="flex flex-col justify-center items-center p-5">
-          <p className="text-sm font-medium text-gray-600 mb-3">{date}</p>
-          <h1 className="text-lg font-bold text-center text-black mb-3 leading-tight">{title}</h1>
-          <p className="text-sm font-normal text-gray-600">{author}</p>
+        <div className="flex flex-col justify-center items-center p-4">
+          <p className="text-sm font-medium text-gray-600 mb-2">{date}</p>
+          <h1 className="text-base md:text-lg font-semibold text-center text-black mb-2 leading-tight">{title}</h1>
+          <p className="text-xs md:text-sm font-normal text-gray-600">{author}</p>
         </div>
       </div>
     </>
