@@ -3,7 +3,7 @@ name: "Bug Report"
 about: Report a bug in the project
 title: "Navbar and Footer Position Issue"
 labels: bug
-assignees: ""
+assignees: "vikas"
 ---
 
 ## Bug Description
@@ -49,7 +49,7 @@ name: "Bug Report"
 about: Report a bug in the project
 title: "Team page throws error due to missing data source connection"
 labels: bug
-assignees: ""
+assignees: "vikas"
 ---
 
 ## Bug Description
@@ -77,7 +77,7 @@ name: "Bug Report"
 about: Report a bug in the project
 title: "Incorrect routing for Blogs and Events buttons in Navbar"
 labels: bug
-assignees: ""
+assignees: "vikas"
 ---
 
 ## Bug Description
@@ -111,7 +111,7 @@ name: "Bug Report"
 about: Report a bug in the project
 title: "Navbar is not fixed at the top while scrolling"
 labels: bug
-assignees: ""
+assignees: "vikas"
 ---
 
 ## Bug Description
