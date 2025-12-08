@@ -10,6 +10,7 @@ export default function Events(){
 
         <div className="w-full  relative mt-[90px] overflow-x-hidden">
         <img 
+        
         src="https://sosc.org.in/_astro/event.DQU1qtO9_Z1ymQy6.webp" 
         alt="bgimg"
         height={100}
@@ -24,7 +25,7 @@ export default function Events(){
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 mt-10 px-20">
+        <div className="grid md:grid-cols-2 gap-10 mt-10 px-3 md:px-20">
             {eventsData.map((event) => (
                 <CardB
                 key={event.id}
