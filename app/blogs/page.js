@@ -1,15 +1,15 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
+import NavBar from "../components/NavBar";
 import { eventsData } from "../data/blogdata";
-import CardA from "../compnents/cardA";
-import Footer from "../compnents/Footer";
+import CardA from "../components/cardA";
+import Footer from "../components/Footer";
 
 export default function Blogs() {
   return (
     <>
       <NavBar />
 
-      <div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+      <div className="w-full h-[450px] relative overflow-x-hidden font-[poppins]">
         <Image
           src="https://sosc.org.in/_astro/blog.CMAhwL9B_Z2uelPt.webp"
           alt="img"
@@ -22,8 +22,8 @@ export default function Blogs() {
 
         
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-5xl font-bold">Blogs</h1>
-          <h1 className="text-white text-2xl font-extrabold">
+          <h1 className="text-gray-200 text-5xl font-semibold">Blogs</h1><br/>
+          <h1 className="text-gray-300 text-md">
             Dive into articles, insights, and updates from our community.
           </h1>
         </div>
@@ -47,3 +47,6 @@ export default function Blogs() {
     </>
   );
 }
+
+
+

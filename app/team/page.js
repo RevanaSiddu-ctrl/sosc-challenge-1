@@ -1,15 +1,19 @@
 import Image from "next/image";
-import NavBar from "../compnents/NavBar";
-import Footer from "../compnents/Footer"; 
-import CardC from "../compnents/cardC";  
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer"; 
+import CardC from "../components/cardC";  
+import { teamData } from "../data/members";
+
+
 
 export default function Team(){
     return(
         <>
-        <NavBar/><div className="w-full h-[400px] relative mt-[90px] overflow-x-hidden">
+        <NavBar/>
+        <div className="w-full h-[400px] relative overflow-x-hidden  font-[poppins]">
                 <Image
                   src="https://sosc.org.in/_astro/team.DFWwMBWD_Snw2F.webp"
-                  alt="img"
+                  alt="logo"
                   width={100}
                   height={100}
                   unoptimized
@@ -19,8 +23,8 @@ export default function Team(){
         
                 
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <h1 className="text-white text-5xl font-bold">Our Team</h1>
-                  <h1 className="text-white text-2xl font-extrabold">
+                  <h1 className="text-white text-5xl font-semibold">Our Team</h1>
+                  <h1 className="text-white text-md ">
                     Meet the passionate individuals driving our community forward
                   </h1>
                 </div>
@@ -29,7 +33,7 @@ export default function Team(){
               <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
                 <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
                 
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9">
+                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9 ml-10">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
                 alt="co-ordinator" 
                 height={100} 
@@ -50,6 +54,7 @@ export default function Team(){
                             image={data.image}
                             name={data.name}
                             role={data.role}
+                            email={data.email}
                             
                           />
                         ))}
@@ -62,3 +67,6 @@ export default function Team(){
         </>
     );
 }
+
+
+
