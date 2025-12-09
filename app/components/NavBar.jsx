@@ -22,7 +22,7 @@ export default function NavBar() {
 
       {!isMobile && (
         <div className="flex flex-row gap-10 mr-[150px]">
-          <button className="text-white text-sm" onClick={() => router.push("/home")}>
+          <button className="text-white text-sm" onClick={() => router.push("/")}>
             Home
           </button>
           <button className="text-white text-sm" onClick={() => router.push("/events")}>

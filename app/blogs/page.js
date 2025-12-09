@@ -28,12 +28,10 @@ export default function Blogs() {
           </h1>
         </div>
       </div>
-
-     <div className="max-w-7xl mx-auto mt-16 px-6">
+<div className="max-w-7xl mx-auto mt-16 px-6">
   <div className="grid grid-cols-12 gap-10">
 
-
-    <div className="col-span-12 lg:col-span-6 ">
+    <div className="col-span-12 lg:col-span-6">
       <CardA
         large
         title={eventsData[0].title}
@@ -45,7 +43,7 @@ export default function Blogs() {
     </div>
 
     <div className="col-span-12 lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
-      {eventsData.slice(1).map((event) => (
+      {eventsData.slice(1, 5).map((event) => (
         <CardA
           key={event.id}
           title={event.title}
@@ -56,8 +54,22 @@ export default function Blogs() {
       ))}
     </div>
 
+    <div className="col-span-12 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  {eventsData.slice(5).map((event) => (
+    <CardA
+      key={event.id}
+      title={event.title}
+      date={event.date}
+      image={event.image}
+      author={event.author}
+    />
+  ))}
+</div>
+
+
   </div>
 </div>
+
 
 
       <Footer/>

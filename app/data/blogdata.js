@@ -33,6 +33,14 @@ export const eventsData = [
   },
   {
     id: 5,
+    title: " Organising our first virtual event ",
+    date: "October 21, 2020",
+    image: "https://sosc.org.in/_astro/blog_cover.J94BMWgB_Z1sP3K.webp",
+    author: "By haxzie",
+
+  },
+  {
+    id: 6,
     title: " Lessons from hosting a hackathon for complete beginners, and why they liked it. ",
     date: "October 29, 2018",
     image: "https://sosc.org.in/_astro/cover.DJlrKJfS_17bUag.webp",
@@ -40,11 +48,37 @@ export const eventsData = [
     author: "By haxzie",
   },
   {
-    id: 6,
+    id: 7,
     title: " WebVR : Bringing VR to Web ",
     date: "2October 5, 2018",
     image: "https://sosc.org.in/_astro/cover.BR9LLpJ7_xcaCM.webp",
     para:"WebVR is a technology that allows developers to create virtual reality experiences that can be viewed on the web. It is based on the WebVR API, which is a set of JavaScript APIs that allow developers to create 3D graphics and interact with them using virtual reality headsets.",
     author: "By jehadmohamedz",
   },
+  
+{
+  id: 8,
+  title: "How open source can help shape your IT career",
+  date: "August 28, 2018",
+  image: "https://sosc.org.in/_astro/cover.BBwAJDEP_ZB8XhG.webp",
+  para: "This article explains how contributing to open source projects helps developers improve skills, build a strong portfolio, collaborate globally, and grow their careers in the IT industry.",
+  author: "By haxzie",
+},
+{
+  id: 9,
+  title: "Getting Certified as Associate Android Developer by Google",
+  date: "August 9, 2018",
+  image: "https://sosc.org.in/_astro/cover.CAod98LH_1FWpMv.webp",
+  para: "A detailed overview of Google’s Associate Android Developer certification, including preparation tips, exam structure, and how certification can boost credibility and job opportunities.",
+  author: "By rumaan",
+},
+{
+  id: 10,
+  title: "Winning our very first game development hackathon",
+  date: "August 8, 2018",
+  image: "https://sosc.org.in/_astro/cover.BtqKdxEJ_ZzkAWS.webp",
+  para: "A firsthand experience of participating in and winning a game development hackathon, highlighting teamwork, creativity, learning outcomes, and the excitement of building games under pressure.",
+  author: "By haxzie",
+},
+
 ];

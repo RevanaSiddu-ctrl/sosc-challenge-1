@@ -2,15 +2,15 @@ export default function CardA({ title, date, image, author, para, large }) {
   return (
     <div
       className={
-        "bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition " +
-        (large ? "h-[520px]" : "h-[320px]")
+        "font-[poppins] bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition " +
+        (large ? "h-[670px]" : "h-80")
       }
     >
       <img
         src={image}
         alt="img"
         className={
-          (large ? "h-[60%]" : "h-[45%]") +
+          (large ? "h-[60%]" : "h-[40%]") +
           " w-full object-cover"
         }
       />
@@ -20,7 +20,7 @@ export default function CardA({ title, date, image, author, para, large }) {
 
         <h1
           className={
-            "font-bold text-gray-900 leading-snug " +
+            "font-semibold text-gray-900 leading-snug " +
             (large ? "text-2xl" : "text-lg")
           }
         >
