@@ -32,7 +32,7 @@ export default function Team(){
               </div>
 
               <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30 font-[poppins]">
-                <h1 className="text-2xl text-black font-semibold ">Co-Ordinator</h1>
+                <h1 className="text-2xl text-black font-bold ">Co-Ordinator</h1>
                 
                 <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9 ml-5">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
@@ -46,7 +46,9 @@ export default function Team(){
                 </div>
 
                 <div className="w-full flex flex-col items-start pl-25 font-[poppins]">
-                <h1 className="text-2xl text-black font-semibold">Community Members</h1>
+               <div className="ml-5">
+                 <h1 className="text-2xl text-black font-bold mb-4 mt-10">Community Members</h1>
+               </div>
                 <div className="flex justify-center items-center">
                       <div className="grid grid-cols-3 gap-7  px-10  justify-center items-center">
                         {teamData.map((data) => (
