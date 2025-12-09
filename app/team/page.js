@@ -30,24 +30,24 @@ export default function Team(){
                 </div>
               </div>
 
-              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Co-Ordinator</h1>
+              <div className="w-full h-[350px] flex flex-col items-start pt-10 pl-30 font-[poppins]">
+                <h1 className="text-2xl text-black font-semibold ">Co-Ordinator</h1>
                 
-                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9 ml-10">
+                <div className="flex flex-col items-center justify-center h-[300px] w-[400px] shadow-[0_0_8px_rgba(0,0,0,0.25)] my-9 ml-5">
                 <img src="https://sosc.org.in/team/mustafa_asthikodi.jpg"
                 alt="co-ordinator" 
                 height={100} 
                 width={100} 
                 className="rounded-[50%] h-[100px] w-[100px]"/>
-                <h1 className="text-black font-bold my-2">Dr. Mustafa Basthikodi</h1>
-                <h3 className="text-gray-950">Faculty Coordinator</h3>
+                <h1 className="text-black font-semibold my-2">Dr. Mustafa Basthikodi</h1>
+                <h3 className="text-gray-600 text-[12px]">Faculty Coordinator</h3>
                 </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start pt-10 pl-30">
-                <h1 className="text-2xl text-black font-bold">Community Members</h1>
-                <div className="flex justify-center items-center mt-10">
-                      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+                <div className="w-full flex flex-col items-start pl-25 font-[poppins]">
+                <h1 className="text-2xl text-black font-semibold">Community Members</h1>
+                <div className="flex justify-center items-center">
+                      <div className="grid grid-cols-3 gap-7  px-10  justify-center items-center">
                         {teamData.map((data) => (
                           <CardC
                             key={data.id}
