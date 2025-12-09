@@ -8,7 +8,8 @@ import { teamData } from "../data/members";
 
 export default function Team(){
     return(
-        <>
+      <>
+    
         <NavBar/>
         <div className="w-full h-[400px] relative overflow-x-hidden  font-[poppins]">
                 <Image
@@ -60,13 +61,10 @@ export default function Team(){
                         ))}
                       </div>
                       </div>
-
               </div>
 
               <Footer/>
         </>
-    );
+        )
+  
 }
-
-
-

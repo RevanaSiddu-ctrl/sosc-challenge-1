@@ -9,7 +9,7 @@ export default function Blogs() {
     <>
       <NavBar />
 
-      <div className="w-full h-[450px] relative overflow-x-hidden font-[poppins]">
+      <div className="lg:w-full lg:h-[450px] relative overflow-x-hidden font-[poppins] sm:w-full sm:h-[350px] ">
         <Image
           src="https://sosc.org.in/_astro/blog.CMAhwL9B_Z2uelPt.webp"
           alt="img"
@@ -21,27 +21,44 @@ export default function Blogs() {
         />
 
         
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <h1 className="text-gray-200 text-5xl font-semibold">Blogs</h1><br/>
-          <h1 className="text-gray-300 text-md">
+          <h1 className="text-gray-300 text-md mt-2">
             Dive into articles, insights, and updates from our community.
           </h1>
         </div>
       </div>
 
-     <div className="flex justify-center items-center mt-10">
-      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
-        {eventsData.map((event) => (
-          <CardA
-            key={event.id}
-            title={event.title}
-            date={event.date}
-            image={event.image}
-            author={event.author}
-          />
-        ))}
-      </div>
-      </div>
+     <div className="max-w-7xl mx-auto mt-16 px-6">
+  <div className="grid grid-cols-12 gap-10">
+
+
+    <div className="col-span-12 lg:col-span-6 ">
+      <CardA
+        large
+        title={eventsData[0].title}
+        date={eventsData[0].date}
+        image={eventsData[0].image}
+        author={eventsData[0].author}
+        para={eventsData[0].para}
+      />
+    </div>
+
+    <div className="col-span-12 lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {eventsData.slice(1).map((event) => (
+        <CardA
+          key={event.id}
+          title={event.title}
+          date={event.date}
+          image={event.image}
+          author={event.author}
+        />
+      ))}
+    </div>
+
+  </div>
+</div>
+
 
       <Footer/>
     </>
