@@ -4,6 +4,7 @@ export const eventsData = [
     title: "Git and GitHub for Beginners - The Basics ",
     date: "14-07-2023",
     image: "https://sosc.org.in/_astro/cover.BjsYkcse_Z2amHgR.webp",
+    para:"Git is a version control system that helps you track changes in your code and work on projects safely without losing previous work. GitHub is an online platform that uses Git to store code in repositories and makes it easy to share, collaborate, and manage projects with others. Together, Git and GitHub help developers save their work, view history, fix mistakes, and collaborate as a team efficiently",
     author: "By Deveesh-Shetty",
   },
   {
@@ -11,6 +12,7 @@ export const eventsData = [
     title: " SAP Labs Interview Experience ",
     date: "September 24, 2019",
     image: "https://sosc.org.in/_astro/SAP-logo.BHktHPU2_2uhTrg.webp",
+    para:"SAP Labs is a global research and development center of SAP SE, a German multinational software corporation. It is one of the largest software companies in the world and is known for its innovative software solutions for businesses.",
     author: "By melwinlobo18",
   },
   {
@@ -18,6 +20,7 @@ export const eventsData = [
     title: " The Smart India Hackathon Experience - SIH 2019 ",
     date: "June 4, 2019",
     image: "https://sosc.org.in/_astro/cover.BBwAJDEP_ZB8XhG.webp",
+    para:"The Smart India Hackathon (SIH) is a national-level hackathon organized by the Indian government to promote innovation and entrepreneurship among students. It is one of the largest hackathons in the world, with thousands of participants from across India and around the world.",
     author: "By nathanielmathew",
   },
   {
@@ -25,20 +28,57 @@ export const eventsData = [
     title: " Hackference India - Fostering Developer Communities through DevRel Confs ",
     date: "January 11, 2019",
     image: "https://sosc.org.in/_astro/cover.CAod98LH_1FWpMv.webp",
+    para:"Hackference India is a developer relations conference that focuses on fostering developer communities and promoting open-source software. It is organized by the Open Source Society of India (OSSOCI) and is held annually in India.",
     author: "By haxzie",
   },
   {
     id: 5,
-    title: " Lessons from hosting a hackathon for complete beginners, and why they liked it. ",
-    date: "October 29, 2018",
-    image: "https://sosc.org.in/_astro/cover.DJlrKJfS_17bUag.webp",
+    title: " Organising our first virtual event ",
+    date: "October 21, 2020",
+    image: "https://sosc.org.in/_astro/blog_cover.J94BMWgB_Z1sP3K.webp",
     author: "By haxzie",
+
   },
   {
     id: 6,
+    title: " Lessons from hosting a hackathon for complete beginners, and why they liked it. ",
+    date: "October 29, 2018",
+    image: "https://sosc.org.in/_astro/cover.DJlrKJfS_17bUag.webp",
+    para:"Hackathons are events where developers come together to work on software projects for a set period of time. They are a great way to learn new skills, meet like-minded people, and showcase your abilities to potential employers.",
+    author: "By haxzie",
+  },
+  {
+    id: 7,
     title: " WebVR : Bringing VR to Web ",
     date: "2October 5, 2018",
     image: "https://sosc.org.in/_astro/cover.BR9LLpJ7_xcaCM.webp",
+    para:"WebVR is a technology that allows developers to create virtual reality experiences that can be viewed on the web. It is based on the WebVR API, which is a set of JavaScript APIs that allow developers to create 3D graphics and interact with them using virtual reality headsets.",
     author: "By jehadmohamedz",
   },
+  
+{
+  id: 8,
+  title: "How open source can help shape your IT career",
+  date: "August 28, 2018",
+  image: "https://sosc.org.in/_astro/cover.BBwAJDEP_ZB8XhG.webp",
+  para: "This article explains how contributing to open source projects helps developers improve skills, build a strong portfolio, collaborate globally, and grow their careers in the IT industry.",
+  author: "By haxzie",
+},
+{
+  id: 9,
+  title: "Getting Certified as Associate Android Developer by Google",
+  date: "August 9, 2018",
+  image: "https://sosc.org.in/_astro/cover.CAod98LH_1FWpMv.webp",
+  para: "A detailed overview of Google’s Associate Android Developer certification, including preparation tips, exam structure, and how certification can boost credibility and job opportunities.",
+  author: "By rumaan",
+},
+{
+  id: 10,
+  title: "Winning our very first game development hackathon",
+  date: "August 8, 2018",
+  image: "https://sosc.org.in/_astro/cover.BtqKdxEJ_ZzkAWS.webp",
+  para: "A firsthand experience of participating in and winning a game development hackathon, highlighting teamwork, creativity, learning outcomes, and the excitement of building games under pressure.",
+  author: "By haxzie",
+},
+
 ];
