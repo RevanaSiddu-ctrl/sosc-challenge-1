@@ -21,16 +21,16 @@ export default function Blogs() {
         />
 
         
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-5xl font-bold">Blogs</h1>
-          <h1 className="text-white text-2xl font-extrabold">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Blogs</h1>
+          <p className="text-white text-lg md:text-xl font-normal max-w-3xl">
             Dive into articles, insights, and updates from our community.
-          </h1>
+          </p>
         </div>
       </div>
 
-     <div className="flex justify-center items-center mt-10">
-      <div className="grid grid-cols-3 gap-20 mt-10  px-10  justify-center items-center">
+     <div className="flex justify-center items-center mt-10 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mt-10 px-8 md:px-12 lg:px-20 max-w-7xl mx-auto">
         {eventsData.map((event) => (
           <CardA
             key={event.id}

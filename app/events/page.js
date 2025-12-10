@@ -16,22 +16,24 @@ export default function Events(){
         width={100}
          className="w-full h-[500px] brightness-50"/>
 
-         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-3xl font-bold">Our Events</h1>
-          <h1 className="text-white text-1xl font-extrabold">
+         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Events</h1>
+          <p className="text-white text-lg md:text-xl font-normal max-w-3xl">
             Explore upcoming and past events hosted by our community.
-          </h1>
+          </p>
         </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 mt-10 px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-10 mb-16 px-8 md:px-12 lg:px-20 max-w-7xl mx-auto">
             {eventsData.map((event) => (
                 <CardB
                 key={event.id}
+                id={event.id}
                 title={event.title}
                 date={event.date}
                 image={event.image}
-                location={event.location} />
+                location={event.location}
+                link={event.link} />
             ))} 
         </div>
         <Footer/>
